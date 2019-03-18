@@ -6,15 +6,13 @@ description: The Personal Website of Stephen Czekalski
 <ul>
     {% for post in site.posts limit:5 %}
     <li class="padding-b-xl">
+      <div class="post-date">{{ post.date | date_to_string }}</div>
       <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-      {{ post.content }}
+      <div class="post-body">{{ post.content }}</div>
     </li>
     {% endfor %}  
 
-    <li>
-      <p style="text-align: center;">
-        For more visited the <a href="/webliography.html">Webliography</a>
-      </p>
-    </li>
 </ul>
+
+{% include more.html %}
 

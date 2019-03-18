@@ -78,6 +78,11 @@ Nulla condimentum eu velit eu sodales. Mauris eu nibh tincidunt, lobortis erat r
 
 Curabitur sed tristique quam. Pellentesque ac interdum eros. Sed efficitur auctor ipsum a aliquet. Aenean facilisis erat non egestas tempus. Nulla nec nulla a felis bibendum convallis id at est. Morbi posuere nisl et ex vehicula placerat. Donec egestas massa lectus, sed egestas lorem blandit sit amet. Aliquam dapibus vitae nisi et euismod. Maecenas a turpis a nunc condimentum luctus vel nec est. Integer hendrerit erat et luctus dignissim.
 
+* Apples are red.
+* Organges are orange.
+* Grapes are sometimes purple.
+* Watermelon is green on the outside and red on the inside.
+
 Sed lobortis hendrerit purus eu ornare. Maecenas vitae nulla ut tellus pharetra accumsan vel et enim. Duis semper turpis lectus, nec elementum metus cursus quis. Donec turpis nibh, euismod in elit ac, lacinia laoreet massa. Sed efficitur nisl a eleifend mollis. Ut sed est id orci vestibulum lobortis. Ut eu metus scelerisque, egestas elit at, porta velit. Maecenas semper leo a lorem fermentum, non dignissim enim aliquam. Donec tempor sodales metus, vel viverra dui pellentesque in. Sed mattis mi et quam eleifend aliquam. Aliquam et leo felis.
 
 In finibus nunc sit amet tellus maximus pellentesque. Maecenas erat mi, mattis quis vulputate sed, interdum vel enim. Sed maximus vulputate porttitor. Vestibulum at bibendum ligula, in aliquam magna. Sed tincidunt, dolor pretium bibendum eleifend, urna enim scelerisque neque, vitae luctus metus libero quis enim. Fusce hendrerit fringilla rhoncus. Donec volutpat augue quis malesuada rhoncus. Vestibulum tristique libero et orci ullamcorper tincidunt. Aliquam erat volutpat. Mauris varius enim lectus, non dictum felis condimentum imperdiet. Nulla leo metus, sollicitudin quis bibendum quis, volutpat at nisi.
