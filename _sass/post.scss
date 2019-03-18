@@ -1,0 +1,23 @@
+.post-wrapper
+{
+    padding-bottom: 80px;
+}
+
+.post-date
+{
+    font-size: 1.4em;
+    color: $metadata-color;
+}
+
+h1.post-title
+{
+    font-size: 4.5em
+}
+
+h1.post-title a:active,
+h1.post-title a:visited,
+h1.post-title a:link,
+h1.post-title a:hover
+{
+    color: #000;
+}
