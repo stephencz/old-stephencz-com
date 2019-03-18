@@ -16,7 +16,7 @@ Cras non vestibulum quam. Nulla venenatis tempor porttitor. Aenean `interdum` au
 
 > People go on about places like Starbucks being unpersonal and all that, but what if that's what you want? I'd be lost if people like that got their way and there was nothing unpersonal in the world. I like to know that there are big places without windows where no one gives a shit. You need confidence to go into small places with regular customers... I'm happiest in the Virgin Megastore and Borders and Starbucks and Pizza Express, where no one gives a shit and no one knows who you are. My mum & dad are always going on about how soulless those places are, and I'm like Der. That's the point.
 > 
-> <cite>Stephen King</cite>
+> <cite>Some Guy</cite>
 
 Praesent viverra consectetur mollis. Aenean finibus quam et neque malesuada, laoreet molestie magna molestie. Donec ornare, elit non molestie tincidunt, magna lacus ultricies magna, a pulvinar justo diam eu nisl. Morbi sagittis odio augue, a tristique nulla sagittis quis. Morbi eget condimentum sapien. Nullam libero purus, bibendum non imperdiet eget, pretium vel sapien. Mauris a efficitur risus. Aenean nisl libero, placerat ac magna ut, pellentesque bibendum metus. Duis fermentum iaculis libero, sodales pretium lectus mollis auctor. Phasellus ornare vitae tortor sed rutrum. Fusce condimentum sem vel tincidunt auctor. Sed dolor orci, hendrerit non lectus eget, gravida consectetur turpis. Sed congue tincidunt purus, eget consectetur augue pulvinar dignissim. Pellentesque placerat purus at ullamcorper dapibus. Curabitur et orci quam. Quisque in semper quam.
 
