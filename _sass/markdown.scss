@@ -1,0 +1,31 @@
+.footnotes
+{
+    border-top: 1px solid $faded-color;
+    font-size: 0.8em;
+    padding-top: 30px;
+}
+
+.footnotes ol
+{
+    list-style: none;
+    counter-reset: footnote-counter;
+}
+
+.footnotes ol li
+{
+    padding-bottom: 5px;
+    counter-increment: footnote-counter;
+}
+
+.footnotes ol li p::before
+{
+    content: "[" counter(footnote-counter) "]";
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.underline
+{
+    text-decoration: underline;
+    font-style: normal;
+}

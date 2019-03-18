@@ -3,12 +3,16 @@
 
 $bg-color: #fbfbfb;
 
-$metadata-color: #8a8a8a;
+$meta-color: #a0a0a0;
 $font-color: #000;
+
+$faded-color: rgba(1, 1, 1, 0.2);
+
 $font-stack: 'Source Serif Pro', serif;
 
 @import "html";
 @import "format";
+@import "markdown";
 @import "syntax";
 @import "sidebar";
 @import "post"

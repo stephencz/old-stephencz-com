@@ -1,14 +1,26 @@
 
-code
+.highlighter-rouge
 {
-  color: #656d96;
+  padding-bottom: 20px;
+}
+
+code.highlighter-rouge
+{
+  color: $meta-color;
+
+  font-family: monospace;
+  font-size: 0.8em;
 }
 
 pre.highlight
 {
-  border: 2px solid #a0a0a0;
-  padding: 20px 10px 20px 10px;
+  border: 2px solid $meta-color;
+
+  font-family: monospace;
   font-size: 1.1em;
+  line-height: 16px;
+
+  padding: 20px 10px 20px 10px;
 }
 
 .highlight table td { padding: 5px; }
@@ -22,7 +34,7 @@ pre.highlight
   font-style: italic;
 }
 .highlight .c1 {
-  color: #75715e;
+  color: #55f764;
   font-style: italic;
 }
 .highlight .cp {

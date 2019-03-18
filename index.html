@@ -7,8 +7,14 @@ description: The Personal Website of Stephen Czekalski
     {% for post in site.posts limit:5 %}
     <li class="padding-b-xl">
       <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-      <p>{{ post.content }}</p>
+      {{ post.content }}
     </li>
     {% endfor %}  
+
+    <li>
+      <p style="text-align: center;">
+        For more visited the <a href="/webliography.html">Webliography</a>
+      </p>
+    </li>
 </ul>
 
