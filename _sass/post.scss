@@ -145,6 +145,92 @@ h1.post-title a:hover
     padding-bottom: 10px;
 }
 
+.post-body > ul
+{
+    font-size: 1.6em;
+    list-style: disc;
+
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+.post-body > ul li
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.post-body > dl
+{
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+.post-body > dl dt
+{
+    font-weight: 700;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.post-body > dl dt::after
+{
+    content: ":";
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.post-body > dl dd
+{
+    font-style: italic;
+
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.post-body > table 
+{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 1.6em;
+}
+
+
+.post-body > table td, 
+.post-body > table th 
+{
+    border: 1px solid #000;
+    padding: 5px 5px;
+}
+
+.post-body > table tr:nth-child(even) 
+{
+    background: #efefef;
+}
+
+
+.post-body > table thead th 
+{
+    color: $font-color;
+    background-color: $meta-color;
+    font-weight: 700;
+}
+
+
+.post-body > table tfoot 
+{
+    font-size: 14px;
+    font-weight: bold;
+    color: $font-color;
+    background: #cacaca;
+}
+
 .post-body > .footnotes
 {
     border-top: 1px dotted $faded-color;
