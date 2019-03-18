@@ -1,0 +1,22 @@
+.history-list
+{
+    padding-top: 20px;
+}
+
+.history-date
+{
+    display: inline;
+    font-size: 1.8em;
+    padding-right: 20px;
+}
+
+.history-date::after
+{
+    content: " : ";
+}
+
+.history-title
+{
+    display: inline;
+    font-size: 1.8em;
+}

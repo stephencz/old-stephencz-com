@@ -1,8 +1,8 @@
 - name: Home
   link: /
 - name: About
-  link: /about.html
+  link: /about
 - name: History
-  link: /history.html
+  link: /history
 - name: Portfolio
-  link: /portfolio.html
+  link: /portfolio

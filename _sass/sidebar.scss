@@ -7,6 +7,7 @@
 {
     font-weight: 700;
     font-size: 2em;
+    line-height: 30px;
 }
 
 ul.sidebar-navigation
@@ -23,5 +24,10 @@ ul.sidebar-navigation li
 {
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.sidebar-last-updated
+{
+    font-size: 1.1em;
 }
 
