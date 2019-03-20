@@ -1,7 +1,7 @@
 - name: Home
   link: /
-- name: Me
-  link: /me
+- name: About
+  link: /about
 - name: Site
   link: /site
 - name: History
