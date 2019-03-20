@@ -45,12 +45,12 @@
 .post-wrapper > .post-body a:link
 {
     color: $link-color;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .post-wrapper > .post-body a:hover
 {
-    color: $font-color;
+    color: $hover-color;
 }
 
 .post-wrapper > .post-body > p
@@ -184,24 +184,17 @@
     font-size: 1.6em;
 }
 
-
 .post-wrapper > .post-body > table td, 
 .post-wrapper > .post-body > table th 
 {
     border: 1px solid #000;
-    padding: 5px 5px;
+    padding: 10px;
 }
-
-.post-wrapper > .post-body > table tr:nth-child(even) 
-{
-    background: #efefef;
-}
-
 
 .post-wrapper > .post-body > table thead th 
 {
     color: $font-color;
-    background-color: $meta-color;
+    background-color: #efefef;
     font-weight: 700;
 }
 

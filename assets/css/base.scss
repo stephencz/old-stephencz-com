@@ -9,7 +9,8 @@ $line-height: 1.8em;
 
 $font-color: #000;
 $meta-color: #a0a0a0;
-$link-color: #00f;
+$link-color: #ca3c3c;
+$hover-color: #ff0000;
 $faded-color: rgba(1, 1, 1, 0.2);
 
 $h1-size: 4em;
@@ -70,7 +71,7 @@ a:link
 
 a:hover
 {
-    color: $font-color;
+    color: $hover-color;
 }
 
 @import "format";
