@@ -10,13 +10,14 @@
 {
     font-size: 1.4em;
     color: $meta-color;
-    padding-bottom: 10px;
+    padding-bottom: 6px;
 }
 
 h1.post-title
 {
     border-bottom: 1px dotted #000;
     margin-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 h1.post-title a:active,
@@ -34,7 +35,8 @@ h1.post-title a:hover
 
 h1.page-title
 {
-    padding-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 5px;
 }
 
 
@@ -243,7 +245,6 @@ h1.page-title
 {
     padding-left: 1px;
 }
-
 
 .post-body > p > sup > a:active,
 .post-body > p > sup > a:visited,
