@@ -1,12 +1,13 @@
 ---
 ---
 
-$bg-color: #fbfbfb;
+$bg-color: #fff;
 
 $meta-color: #a0a0a0;
 $font-color: #000;
 
 $faded-color: rgba(1, 1, 1, 0.2);
+$post-link-color: #00f;
 
 $font-stack: 'Source Serif Pro', serif;
 
@@ -15,4 +16,3 @@ $font-stack: 'Source Serif Pro', serif;
 @import "syntax";
 @import "sidebar";
 @import "post";
-@import "history";

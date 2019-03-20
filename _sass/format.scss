@@ -30,14 +30,22 @@
 .underline-light{ border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 .underline-medium{ border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 .underline-dark{ border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+.underline-solid { border-bottom: 1px solid #000; }
+.underline-dotted{ border-bottom: 1px dotted #000; }
 
 .height-quarter-vh { min-height: 25vh; }
 .height-half-vh { min-height: 50vh; }
 .height-threeq-vh { min-height: 75vh; }
 .height-full-vh { min-height: 100vh; }
 
-.underline
+.underline-text
 {
     text-decoration: underline;
     font-style: normal;
+}
+
+table td.smallest
+{
+    white-space: nowrap;
+    width: 1px;
 }

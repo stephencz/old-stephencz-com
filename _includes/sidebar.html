@@ -1,11 +1,10 @@
 <div class="sidebar-wrapper">
-    <hr>
     <div class="sidebar-title">Stephen Czekalski</div>
     <hr>
     <ul class="sidebar-navigation">
         {% for item in site.data.navigation %}
             <li>
-                <a href="{{ item.link }}" {% if page.url == item.link | append: ".html" %} style="font-weight:700; color: #000;" {% endif %}>
+                <a href="{{ item.link }}" {% if page.url == item.link %} style="font-weight:700; color: #000;" {% endif %}>
                     {{ item.name }}
                 </a>
             </li>
@@ -14,7 +13,7 @@
     
     <hr>
     <div class="sidebar-last-updated">
-        Updated: {{ site.posts.last.date | date: "%B %-d, %Y"}}
+        Built: {{ site.time | date: "%m/%-d/%Y"}}
     </div>
     <hr>
 </div>

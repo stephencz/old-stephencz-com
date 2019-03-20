@@ -1,19 +1,21 @@
 ---
-layout: default
+layout: page
 title: History
 ---
-<h1>History</h1>
 <p>
   Blog posts are often organized by categories and tags. I've decided to order mine by their original
   publish date (in reverse chronological order). At the top of this list is the latest post, and at
   the bottom is the oldest:
 </p>
-
-{% for post in site.posts %}
-    <ul class="history-list">
-      <li>
-        <div class="history-date">{{ post.date | date: "%B %-d, %Y"}}</div>
-        <div class="history-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-      </li>
-    </ul>
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Table</th>
+  </tr>
+{% for post in site.posts %}   
+  <tr>
+    <td class="smallest">{{ post.date | date: "%B %-d, %Y"}}</td>
+    <td><a href="{{ post.url }}">{{ post.title }}</a></td>
+  </tr>
 {% endfor %} 
+</table>

@@ -15,7 +15,8 @@
 
 h1.post-title
 {
-    font-size: 4.5em
+    border-bottom: 1px dotted #000;
+    margin-bottom: 10px;
 }
 
 h1.post-title a:active,
@@ -30,6 +31,12 @@ h1.post-title a:hover
 { 
     font-size: 10px;
 }
+
+h1.page-title
+{
+    padding-top: 25px;
+}
+
 
 /*******************************************************************/
 /* POST STYLES                                                     */
@@ -46,23 +53,23 @@ h1.post-title a:hover
 }
 
 .post-body > h1{ font-size: 4em; }
-.post-body > h2{ font-size: 3.5em; }
-.post-body > h3{ font-size: 3em; }
-.post-body > h4{ font-size: 2.5em; }
-.post-body > h5{ font-size: 2em; }
-.post-body > h6{ font-size: 1.6em; }
+.post-body > h2{ font-size: 3em; }
+.post-body > h3{ font-size: 2em; }
+.post-body > h4{ font-size: 1.6em; }
+.post-body > h5{ font-size: 1.4em; }
+.post-body > h6{ font-size: 1em; }
 
-.post-body > a:active,
-.post-body > a:visited,
-.post-body > a:link
+.post-body a:active,
+.post-body a:visited,
+.post-body a:link
 {
-    color: $meta-color;
+    color: $post-link-color;
     text-decoration: none;
 }
 
-.post-body > a:hover
+.post-body a:hover
 {
-    color: #000;
+    color: $font-color;
 }
 
 .post-body > p
@@ -75,6 +82,7 @@ h1.post-title a:hover
 
 .post-body > p > em{ font-style: italic; }
 .post-body > p > strong{ font-weight: 700; }
+.post-body > p > em > strong{ font-weight: 700; }
 
 .post-body > p > sub, 
 .post-body > p > sup
@@ -231,11 +239,33 @@ h1.post-title a:hover
     background: #cacaca;
 }
 
+.post-body > p > sup
+{
+    padding-left: 1px;
+}
+
+
+.post-body > p > sup > a:active,
+.post-body > p > sup > a:visited,
+.post-body > p > sup > a:link,
+.post-body > p > sup > a:hover
+{
+    font-weight: 700;
+}
+
+
+.post-body > p > sup > a.footnote::before { content: "["; }
+.post-body > p > sup > a.footnote::after { content: "]"; }
+
+
 .post-body > .footnotes
 {
     border-top: 1px dotted $faded-color;
+    border-bottom: 1px dotted $faded-color;
     font-size: 0.8em;
     padding-top: 15px;
+    padding-bottom: 15px;
+
 }
 
 .post-body > .footnotes ol
