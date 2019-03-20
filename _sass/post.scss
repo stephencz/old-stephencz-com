@@ -1,120 +1,83 @@
 /*******************************************************************/
 /* POST STRUCTURE                                                  */
 /*******************************************************************/
-.post-wrapper
-{
-    padding-bottom: 80px;
-}
+.post-wrapper { }
 
-.post-date
+.post-wrapper > .post-date
 {
     font-size: 1.4em;
     color: $meta-color;
     padding-bottom: 6px;
 }
 
-h1.post-title
+.post-wrapper > .post-title
 {
     border-bottom: 1px dotted #000;
+
+    font-size: $h1-size;
+    font-weight: 700;
+
     margin-bottom: 10px;
     padding-bottom: 5px;
 }
 
-h1.post-title a:active,
-h1.post-title a:visited,
-h1.post-title a:link,
-h1.post-title a:hover
+.post-wrapper > .post-title a:active,
+.post-wrapper > .post-title a:visited,
+.post-wrapper > .post-title a:link,
+.post-wrapper > .post-title a:hover
 {
     color: #000;
 }
 
-.post-body 
-{ 
-    font-size: 10px;
-}
-
-h1.page-title
-{
-    padding-top: 20px;
-    padding-bottom: 5px;
-}
-
-
 /*******************************************************************/
 /* POST STYLES                                                     */
 /*******************************************************************/
-
-.post-body > h1, 
-.post-body > h2, 
-.post-body > h3, 
-.post-body > h4, 
-.post-body > h5, 
-.post-body > h6 
-{ 
-    font-weight: 700; 
-}
-
-.post-body > h1{ font-size: 4em; }
-.post-body > h2{ font-size: 3em; }
-.post-body > h3{ font-size: 2em; }
-.post-body > h4{ font-size: 1.6em; }
-.post-body > h5{ font-size: 1.4em; }
-.post-body > h6{ font-size: 1em; }
-
-.post-body a:active,
-.post-body a:visited,
-.post-body a:link
+.post-wrapper > .post-body a:active,
+.post-wrapper > .post-body a:visited,
+.post-wrapper > .post-body a:link
 {
-    color: $post-link-color;
+    color: $link-color;
     text-decoration: none;
 }
 
-.post-body a:hover
+.post-wrapper > .post-body a:hover
 {
     color: $font-color;
 }
 
-.post-body > p
+.post-wrapper > .post-body > p
 {
-    font-size: 1.6em;
-    line-height: 1.8em;
-
     padding-bottom: 20px;
 }
 
-.post-body > p > em{ font-style: italic; }
-.post-body > p > strong{ font-weight: 700; }
-.post-body > p > em > strong{ font-weight: 700; }
+.post-wrapper > .post-body > p > em{ font-style: italic; }
+.post-wrapper > .post-body > p > strong{ font-weight: 700; }
+.post-wrapper > .post-body > p > em > strong{ font-weight: 700; }
 
-.post-body > p > sub, 
-.post-body > p > sup
+.post-wrapper > .post-body > p > sub, 
+.post-wrapper > .post-body > p > sup
 {
     font-size: 75%;
     line-height: 0;
     position: relative;
 }
 
-.post-body > p > sup
+.post-wrapper > .post-body > p > sup
 {
     top: -0.5em;
 }
 
-.post-body > p > sub
+.post-wrapper > .post-body > p > sub
 {
     bottom: -0.25em;
 }
 
-.post-body > hr
-{
-    border-top: 1px solid $faded-color;
-}
-
-.post-body > hr.dotted
+.post-wrapper > .post-body > hr
 {
     border-top: 1px dotted $faded-color;
 }
 
-.post-body > blockquote
+.post-wrapper > .post-body > blockquote
 {
     border-left: 5px solid $meta-color;
 
@@ -124,23 +87,23 @@ h1.page-title
     padding-left: 40px;
 }
 
-.post-body > blockquote > p
+.post-wrapper > .post-body > blockquote > p
 {
     font-style: italic;
 }
 
-.post-body > blockquote cite::before
+.post-wrapper > .post-body > blockquote cite::before
 {
     content: "-- ";
 }
 
-.post-body > blockquote cite
+.post-wrapper > .post-body > blockquote cite
 {
    font-style: normal;
    padding-left: 30px;
 }
 
-.post-body > ol
+.post-wrapper > .post-body > ol
 {
     font-size: 1.6em;
     list-style: decimal;
@@ -149,13 +112,13 @@ h1.page-title
     padding-left: 40px;
 }
 
-.post-body > ol li
+.post-wrapper > .post-body > ol li
 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.post-body > ul
+.post-wrapper > .post-body > ul
 {
     font-size: 1.6em;
     list-style: disc;
@@ -164,20 +127,22 @@ h1.page-title
     padding-left: 40px;
 }
 
-.post-body > ul li
+.post-wrapper > .post-body > ul li
 {
+    line-height: $line-height;
+
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.post-body > dl
+.post-wrapper > .post-body > dl
 {
     font-size: 1.6em;
     margin-bottom: 20px;
     padding-left: 40px;
 }
 
-.post-body > dl dt
+.post-wrapper > .post-body > dl dt
 {
     font-weight: 700;
 
@@ -185,14 +150,14 @@ h1.page-title
     padding-bottom: 10px;
 }
 
-.post-body > dl dt::after
+.post-wrapper > .post-body > dl dt::after
 {
     content: ":";
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.post-body > dl dd
+.post-wrapper > .post-body > dl dd
 {
     font-style: italic;
 
@@ -202,7 +167,7 @@ h1.page-title
 }
 
 
-.post-body > table 
+.post-wrapper > .post-body > table 
 {
     border-collapse: collapse;
     width: 100%;
@@ -212,20 +177,20 @@ h1.page-title
 }
 
 
-.post-body > table td, 
-.post-body > table th 
+.post-wrapper > .post-body > table td, 
+.post-wrapper > .post-body > table th 
 {
     border: 1px solid #000;
     padding: 5px 5px;
 }
 
-.post-body > table tr:nth-child(even) 
+.post-wrapper > .post-body > table tr:nth-child(even) 
 {
     background: #efefef;
 }
 
 
-.post-body > table thead th 
+.post-wrapper > .post-body > table thead th 
 {
     color: $font-color;
     background-color: $meta-color;
@@ -233,7 +198,7 @@ h1.page-title
 }
 
 
-.post-body > table tfoot 
+.post-wrapper > .post-body > table tfoot 
 {
     font-size: 14px;
     font-weight: bold;
@@ -241,25 +206,25 @@ h1.page-title
     background: #cacaca;
 }
 
-.post-body > p > sup
+.post-wrapper > .post-body > p > sup
 {
     padding-left: 1px;
 }
 
-.post-body > p > sup > a:active,
-.post-body > p > sup > a:visited,
-.post-body > p > sup > a:link,
-.post-body > p > sup > a:hover
+.post-wrapper > .post-body > p > sup > a:active,
+.post-wrapper > .post-body > p > sup > a:visited,
+.post-wrapper > .post-body > p > sup > a:link,
+.post-wrapper > .post-body > p > sup > a:hover
 {
     font-weight: 700;
 }
 
 
-.post-body > p > sup > a.footnote::before { content: "["; }
-.post-body > p > sup > a.footnote::after { content: "]"; }
+.post-wrapper > .post-body > p > sup > a.footnote::before { content: "["; }
+.post-wrapper > .post-body > p > sup > a.footnote::after { content: "]"; }
 
 
-.post-body > .footnotes
+.post-wrapper > .post-body > .footnotes
 {
     border-top: 1px dotted $faded-color;
     border-bottom: 1px dotted $faded-color;
@@ -269,19 +234,19 @@ h1.page-title
 
 }
 
-.post-body > .footnotes ol
+.post-wrapper > .post-body > .footnotes ol
 {
     list-style: none;
     counter-reset: footnote-counter;
 }
 
-.post-body > .footnotes ol li
+.post-wrapper > .post-body > .footnotes ol li
 {
     padding-bottom: 5px;
     counter-increment: footnote-counter;
 }
 
-.post-body > .footnotes ol li p::before
+.post-wrapper > .post-body > .footnotes ol li p::before
 {
     content: "[" counter(footnote-counter) "]";
     font-weight: bold;

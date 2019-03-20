@@ -3,14 +3,14 @@
 /*******************************************************************/
 .sidebar-wrapper { padding-bottom: 20px; }
 
-.sidebar-title
+.sidebar-wrapper > .sidebar-title
 {
     font-weight: 700;
     font-size: 2em;
     line-height: 30px;
 }
 
-ul.sidebar-navigation
+.sidebar-wrapper > ul.sidebar-navigation
 {
     font-size: 1.6em;
 
@@ -20,14 +20,31 @@ ul.sidebar-navigation
     padding-bottom: 10px;
 }
 
-ul.sidebar-navigation li
+.sidebar-wrapper > ul.sidebar-navigation li
 {
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.sidebar-last-updated
+.sidebar-wrapper > ul.sidebar-navigation li a:active,
+.sidebar-wrapper > ul.sidebar-navigation li a:visited,
+.sidebar-wrapper > ul.sidebar-navigation li a:link
+{
+    color: $meta-color;
+}
+
+.sidebar-wrapper > ul.sidebar-navigation li a:hover
+{
+    color: $font-color;
+}
+
+
+.sidebar-wrapper > .sidebar-last-updated
 {
     font-size: 1.1em;
 }
+
+
+
+
 

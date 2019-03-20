@@ -4,16 +4,21 @@ title: The Personal Website of Stephen Czekalski
 description: The Personal Website of Stephen Czekalski
 ---
 <ul>
-
     {% for post in site.posts limit:5 %}
-    <li class="{% if forloop.first %} padding-b-xl {% else %} padding-b-xl padding-t-xl {% endif %} ">
-      <div class="post-date">{{ post.date | date: "%B %-d, %Y"}}</div>
-      <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-      <div class="post-body">{{ post.content }}</div>
+    <li class="{% if forloop.first %} padding-b-xl {% else %} padding-b-x padding-t-xl {% endif %} ">
+      <div class="post-wrapper">
+          <div class="post-date">{{ post.date | date: "%B %-d, %Y"}}</div>
+          <div class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+          <div class="post-body">{{ post.content }}</div>
+      </div>
     </li>
     {% endfor %} 
-
+    </div>
+    </ul>
 </ul>
 
 {% include more.html %}
+
+
+
 
