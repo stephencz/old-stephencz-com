@@ -3,8 +3,8 @@ layout: page
 title: About
 description: Information about this website.
 ---
-*This page is dedicated to information regarding myself and the site itself. The page is*
-*divided into two sections [In Brief](#in-brief) and [In Depth](#in-depth).*
+*This page is dedicated to information regarding myself and this website. The page is*
+*divided into two sections [Stephen Czekalski](#stephen-czekalski) and [The Site](#the-site).*
 
 ## In Brief
 {:.padding-t-m}

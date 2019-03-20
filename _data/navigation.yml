@@ -1,7 +1,9 @@
 - name: Home
   link: /
-- name: About
-  link: /about
+- name: Me
+  link: /me
+- name: Site
+  link: /site
 - name: History
   link: /history
 - name: Changelog

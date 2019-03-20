@@ -1,4 +1,4 @@
-permalink: /posts/:year/:title
+permalink: /posts/:title
 markdown: kramdown
 kramdown:
   input: GFM
