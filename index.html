@@ -4,19 +4,20 @@ title: Home
 description: The Personal Website of Stephen Czekalski
 ---
 <ul>
-    {% for post in site.posts limit:1 %}
-    <li>
-      <div class="post-wrapper">
-          <div class="post-date">Latest Post <span style="color: #5a5a5a;">|</span> {{ post.date | date: "%B %-d, %Y"}}
-          </div>
-          <div class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-          <div class="post-body">{{ post.content }}</div>
-          {% include more.html %}
+  {% for post in site.posts limit:1 %}
+  <li>
+    <div class="post-wrapper">
+      <div class="post-date">
+        {{ post.date | date: "%B %-d, %Y"}}
       </div>
-    </li>
-    {% endfor %} 
+      <div class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+      <div class="post-body">{{ post.content }}</div>
+      {% include more.html %}
     </div>
-    </ul>
+  </li>
+  {% endfor %} 
+</div>
+</ul>
 </ul>
 
 
