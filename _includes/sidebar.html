@@ -3,6 +3,7 @@
     <hr>
     <ul class="sidebar-navigation">
         {% for item in site.data.navigation %}
+            {% if item.link == "/posts" %} <hr> {% endif %}
             {% if item.link == "/history" %} <hr> {% endif %}
             <li>
                 <a href="{{ item.link }}" {% if page.url == item.link %} style="font-weight:700; color: #000;" {% endif %}>
