@@ -34,7 +34,7 @@
     padding-bottom: 10px; 
 }
 
-.sidebar-wrapper > ul.sidebar-navigation #posts  
+.sidebar-wrapper > ul.sidebar-navigation #directory
 { 
     padding-top: 10px; 
 }
@@ -44,6 +44,7 @@
 .sidebar-wrapper > ul.sidebar-navigation li a:link
 {
     color: $meta-color;
+    text-decoration: none;
 }
 
 .sidebar-wrapper > ul.sidebar-navigation li a:hover
@@ -51,6 +52,10 @@
     color: $font-color;
 }
 
+.sidebar-wrapper > ul.sidebar-navigation li a#current 
+{
+    color: #000;
+}
 
 .sidebar-wrapper > .sidebar-last-updated
 {

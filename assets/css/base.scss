@@ -12,7 +12,7 @@ $line-height: 1.8em;
 $font-color: #000;
 $meta-color: #a0a0a0;
 $link-color: #ca3c3c;
-$hover-color: #ff0000;
+$hover-color: #ff5555;
 $faded-color: rgba(1, 1, 1, 0.2);
 
 $h1-size: 4em;
@@ -58,17 +58,16 @@ p
     line-height: $line-height;
 }
 
-hr
-{
-    border-top: 1px dotted #000;
-}
+em { font-style: italic; }
+strong { font-weight: 700; }
 
 a:active,
 a:visited,
 a:link
 {
     color: $link-color;
-    text-decoration: none;
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 a:hover

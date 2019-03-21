@@ -11,3 +11,42 @@
     padding-bottom: 100px;  
     padding-top: 60px; 
 }
+
+.welcome-wrapper
+{
+    padding-bottom: 80px;
+}
+
+@media (max-width: 799px) 
+{
+    .welcome-wrapper
+    {
+        padding-top: 40px;
+    }
+}
+
+.welcome-wrapper > .welcome-header 
+{
+    border-bottom: 1px dotted #000;
+    font-size: $h1-size;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.welcome-wrapper > p
+{
+    font-size: 1.6em;
+    padding-bottom: 10px;
+}
+
+.welcome-wrapper > p.latest-post
+{
+    font-weight: 700;
+    font-size: 1.8em;
+
+    text-align: center;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+

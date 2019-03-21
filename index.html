@@ -3,24 +3,21 @@ layout: default
 title: Home
 description: The Personal Website of Stephen Czekalski
 ---
-<ul>
-  {% for post in site.posts limit:1 %}
-  <li>
-    <div class="post-wrapper">
-      <div class="post-date">
-        {{ post.date | date: "%B %-d, %Y"}}
-      </div>
-      <div class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-      <div class="post-body">{{ post.content }}</div>
-      {% include more.html %}
-    </div>
-  </li>
-  {% endfor %} 
+<div class="welcome-wrapper">
+  <div class="welcome-header">Welcome</div>
+  <p>
+    Welcome to the website of <strong>Stephen Czekalski</strong>. I am primarily interested in programming and
+    philosophy, but among my other major interests I count reading, writing, playing piano, composing music, photography, 
+    and gaming. For a detailed overview see the <a href="/about">About</a> page.
+  </p>
+  <p> 
+    To get started reading check out the <a href="/directory">Directory</a>, or click on the latest post below.
+    If you would like to learn more about this website, such as how I built it or how I 
+    structure its content, read the <a href="/site">Site</a> page. For an overview of the changes and additions to this
+    website through time view the <a href="/changelog">Changelog</a>.
+  </p>
+  
+  <p class="latest-post">
+    Latest post: {% for post in site.posts limit:1 %} <a href="{{ post.url }}">{{ post.title }}</a> {% endfor %} 
+  </p>
 </div>
-</ul>
-</ul>
-
-
-
-
-
