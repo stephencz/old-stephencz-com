@@ -2,7 +2,12 @@
 layout: default
 ---
 <div class="post-wrapper">
-    <div class="post-date">{{ page.date | date: "%B %-d, %Y" }}</div>
+    <div class="post-metadata">
+        <div class="post-date">Created: {{ page.date | date: "%B %-d, %Y" }} </div>
+        <div class="post-update-date">{% if page.was_updated %} Updated on {{ page.update_date | date: "%B %-d, %Y" }} {% endif %}</div>
+        <div class="
+    </div>
+    
     <div class="post-title">{{ page.title }}</div>
     <div class="post-body">{{ content }}</div>
 </div>
