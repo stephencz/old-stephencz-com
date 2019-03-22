@@ -21,3 +21,6 @@ description: The Personal Website of Stephen Czekalski
     Latest post: {% for post in site.posts limit:1 %} <a href="{{ post.url }}">{{ post.title }}</a> {% endfor %} 
   </p>
 </div>
+
+<p><strong>Posts by Category:</strong></p>
+{% include categories.html %}

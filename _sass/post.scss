@@ -3,6 +3,30 @@
 /*******************************************************************/
 .post-wrapper { }
 
+@media (max-width: 799px) 
+{
+    .post-wrapper
+    {
+        padding-top: 40px;
+    }
+}
+
+.post-wrapper > .post-title
+{
+    font-size: $h1_size;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.post-wrapper > .post-title a:active,
+.post-wrapper > .post-title a:visited,
+.post-wrapper > .post-title a:link,
+.post-wrapper > .post-title a:hover
+{
+    color: #000;
+}
+
 .post-wrapper > .post-metadata
 {
     font-size: 1.4em;
@@ -15,14 +39,14 @@
     display: block;
     font-style: italic;
     
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .post-wrapper > .post-metadata > .data-item
 {
     display: inline-block;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .post-wrapper > .post-metadata > .data-item > .header
@@ -37,28 +61,26 @@
     font-style: italic;
 }
 
-.post-wrapper > .post-title
+.post-wrapper > .post-metadata > .data-list
 {
-    font-size: 4em;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.post-wrapper > .post-metadata > .data-list > .header
+{
+    display: inline-block;
     font-weight: 700;
-
-    margin-bottom: 10px;
 }
 
-.post-wrapper > .post-title a:active,
-.post-wrapper > .post-title a:visited,
-.post-wrapper > .post-title a:link,
-.post-wrapper > .post-title a:hover
+.post-wrapper > .post-metadata > .data-list ul
 {
-    color: #000;
+    display: inline-block;
 }
 
-@media (max-width: 799px) 
+.post-wrapper > .post-metadata > .data-list ul li
 {
-    .post-wrapper
-    {
-        padding-top: 40px;
-    }
+    display: inline-block;
 }
 
 /*******************************************************************/
@@ -146,8 +168,8 @@
 
 .post-wrapper > .post-body > ol li
 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .post-wrapper > .post-body > ul
@@ -163,8 +185,8 @@
 {
     line-height: $line-height;
 
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .post-wrapper > .post-body > dl

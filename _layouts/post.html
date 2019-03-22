@@ -4,25 +4,7 @@ layout: default
 <div class="post-wrapper"> 
     <h1 class="post-title padding-t-s">{{ page.title }}</h1>
 
-    <div class="post-metadata">
-        <div id="description">{{ page.description }}</div>
-        <div class="data-item">
-            <div class="header">created: </div>
-            <div class="value">{{ page.date | date: "%B %-d, %Y" }}</div>
-        </div>
-
-        {% if page.was_updated %}
-        <div class="data-item">
-            <div class="header">updated: </div>
-            <div class="value">{{ page.update_date | date: "%B %-d, %Y" }}</div>
-        </div>
-        {% endif %}
-
-        <div class="data-item">
-            <div class="header">status: </div>
-            <div class="value">{{ page.status }}</div>
-        </div>
-    </div>
+    {% include metadata.html %}
 
     <div class="post-body">{{ content }}</div>
 </div>
