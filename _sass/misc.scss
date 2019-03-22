@@ -50,19 +50,20 @@
     padding-bottom: 30px;
 }
 
-.category-header
+.category-col > .category-header
 {
     font-size: 3em;
     font-weight: 700;
 }
 
-ul.category-list
+.category-col > ul.category-list
 {
     list-style: none;
     font-size: 1.8em;
+    padding-left: 10px;
 }
 
-ul.category-list li
+.category-col > ul.category-list li
 {
     padding-top: 5px;
     padding-bottom: 5px;
