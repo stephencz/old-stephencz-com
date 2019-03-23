@@ -4,7 +4,5 @@
   link: /about
 - name: Site
   link: /site
-- name: Directory
-  link: /directory
 - name: Changelog
   link: /changelog
