@@ -15,4 +15,4 @@ description: A description of all the changes made to the website and its conten
 
 * Finished redesign and published site. For an in depth look at this website's implementation 
   details take a look at the <a href="">Technical Overview</a> on the <a href="/site">Site</a> page.
-* Began the <a href="/posts/essential-reading">Essential Reading</a> post.
+* Began the <a href="/posts/essential-literature">Essential Literature</a> post.

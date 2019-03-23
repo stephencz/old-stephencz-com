@@ -16,11 +16,6 @@ description: The Personal Website of Stephen Czekalski
     structure its content, read the <a href="/site">Site</a> page. For an overview of the changes and additions to this
     website through time view the <a href="/changelog">Changelog</a>.
   </p>
-  
-  <p class="latest-post">
-    Latest post: {% for post in site.posts limit:1 %} <a href="{{ post.url }}">{{ post.title }}</a> {% endfor %} 
-  </p>
 </div>
 
-<p><strong>Posts by Category:</strong></p>
 {% include categories.html %}

@@ -12,7 +12,10 @@
     padding-top: 60px; 
 }
 
-.welcome-wrapper { }
+.welcome-wrapper 
+{ 
+    padding-bottom: 60px;
+}
 
 @media (max-width: 799px) 
 {
@@ -26,22 +29,15 @@
 {
     font-size: $h1-size;
     font-weight: 700;
-    padding-top: 20px;
+    text-align: center;
+
+    margin-bottom: 15px;
 }
 
 .welcome-wrapper > p
 {
-    font-size: 1.6em;
+    font-size: 1.4em;
     padding-bottom: 10px;
-}
-
-.welcome-wrapper > p.latest-post
-{
-    font-weight: 700;
-    font-size: 1.8em;
-
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .category-col

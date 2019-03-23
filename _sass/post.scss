@@ -15,8 +15,9 @@
 {
     font-size: $h1_size;
     font-weight: 700;
+    text-align: center;
 
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .post-wrapper > .post-title a:active,
@@ -30,7 +31,9 @@
 .post-wrapper > .post-metadata
 {
     font-size: 1.4em;
-    padding-bottom: 60px;
+    text-align: center;
+
+    padding-bottom: 20px;
     padding-right: 20px;
 }
 
@@ -39,14 +42,14 @@
     display: block;
     font-style: italic;
     
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .post-wrapper > .post-metadata > .data-item
 {
     display: inline-block;
     padding-right: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .post-wrapper > .post-metadata > .data-item > .header
@@ -64,7 +67,7 @@
 .post-wrapper > .post-metadata > .data-list
 {
     display: block;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .post-wrapper > .post-metadata > .data-list > .header
