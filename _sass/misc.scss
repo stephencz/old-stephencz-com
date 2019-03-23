@@ -12,29 +12,20 @@
     padding-top: 60px; 
 }
 
-.welcome-wrapper 
-{ 
-    padding-bottom: 60px;
-}
-
 @media (max-width: 799px) 
 {
-    .welcome-wrapper
+    .home-wrapper
     {
         padding-top: 40px;
     }
 }
 
-.welcome-wrapper > .welcome-header 
-{
-    font-size: $h1-size;
-    font-weight: 700;
-    text-align: center;
-
-    margin-bottom: 15px;
+.home-wrapper 
+{ 
+    padding-bottom: 60px;
 }
 
-.welcome-wrapper > p
+.home-wrapper > p
 {
     font-size: 1.6em;
     padding-bottom: 10px;

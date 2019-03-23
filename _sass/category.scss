@@ -25,3 +25,24 @@
     padding-bottom: 5px;
 }
 
+.primary-category-wrapper
+{
+    text-align: center;
+}
+
+.primary-category-wrapper > .category-header
+{
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.primary-category-wrapper >  ul.category-list
+{
+    font-size: 1.6em;
+}
+
+.primary-category-wrapper > ul.category-list li
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
