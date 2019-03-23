@@ -7,4 +7,3 @@ update_date: 2019-03-23
 status: continuous
 categories: [collections, books, growth]
 ---
-
