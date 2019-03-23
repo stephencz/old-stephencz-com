@@ -24,14 +24,14 @@ layout: default
         </div>
     
         <div class="data-list">
-            <div class="header">tags: </div>
+            <div class="header">categories: </div>
             <ul>
             {% assign i = 1 %}
-            {% for tag in page.tags %}
+            {% for cat in page.categories %}
                 <li>
-                    <a href="">
-                        {% assign tag_num = page.tags | size %}
-                        {{ tag }}{% if i != tag_num %},{% endif %}
+                    <a href="/categories/{{cat}}">
+                        {% assign cat_num = page.categories | size %}
+                        {{ cat }}{% if i != cat_num %},{% endif %}
                     </a>
                 </li>
     

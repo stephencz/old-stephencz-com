@@ -1,0 +1,27 @@
+.category-wrapper
+{
+    padding-bottom: 30px;
+}
+
+.category-wrapper > h1
+{
+    font-size: $h1-size;
+    font-weight: 700;
+    text-align: center;
+    
+    padding-bottom:30px;
+}
+
+.category-wrapper > ul
+{
+    list-style: none;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.category-wrapper > ul li
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+

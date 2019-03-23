@@ -75,9 +75,14 @@ a:hover
     color: $hover-color;
 }
 
-@import "format";
-@import "syntax";
-@import "misc";
+
 
 @import "sidebar";
 @import "post";
+
+@import "category";
+
+@import "syntax";
+@import "misc";
+
+@import "format";

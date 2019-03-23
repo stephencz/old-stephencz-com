@@ -1,8 +1,84 @@
-<div class="row">
-    {% include categories/collections.html %}
+{% comment %} 
+This code is a bit tricky because liquid can be restrictive in odds ways.
+Because posts can have multiple categories, I wanted to organize them on
+the home page by putting posts in only their first, or what I call their
+"primary" category. Let me walk you through the code:
 
-    <div class="six columns category-col">
+    1) First I create an integer and boolean called counter and found.
+       Counter is used to count the number of columns so that I know
+       when to create a new row. Found is a flag I use to determine
+       if a post exists which as the current category as its "primary"
+       category.
 
-    </div>
-</div>
+    2) I then get an array of the site's categories and sort it.
     
+    3) Now I loop over every category in that array.
+
+    4) At the start of this first for loop I create another array.
+       This one contains all the site's posts sorted.
+    
+    5) Now I start looping through those posts. The objective of this
+       entire loop is to simply find matches. If a post has a "primary"
+       which matches the category of our outer for-loop, then we set found to
+       true, create a row if counter is 0, create a header, start a list,
+       and then break out of the loop.
+
+    6) The "if found" statement is the next step. Here we again iterate
+       over the the posts and compare the "primary" category to the category
+       of the outer for-loop. But instead of switching a flag and creating a list,
+       we add the matches to the already existant list. 
+
+    7) Once done iterating over the posts all posts which had a primary category
+       which matched the outer for-loop category will have been outputted. We then
+       close the list and column. Increment counter (NOTE that we do this because
+       a row's size must be 12 and each column is six in this case). We switch the
+       found flag to false so that we can move on to the next category. And IF counter
+       is equal to 2 we close the row and put counter back at 0.
+    
+{% endcomment %}
+
+{% assign counter = 0 %}
+{% assign found = false %}
+
+{% assign sorted_categories = site.categories | sort %}
+
+{% for category in sorted_categories %}
+
+  {% assign sorted_posts = category[1] | reversed %}
+  {% for post in sorted_posts %}
+    {% if post.categories[0] contains category[0] %}
+      {% assign found = true %}
+
+      {% if counter == 0 %}
+      <div class="row">
+      {% endif %}
+
+      <div class="six columns">
+        <div class="header">{{category[0] | capitalize}}</div>
+        <ul>        
+    {% endif %}
+
+    {% if found %}
+      {% break %}
+    {% endif %}
+  {% endfor %}  
+
+  {% if found %}
+    {% for post in sorted_posts %}
+      {% if post.categories[0] contains category[0] %}
+          <li><a href="{{post.url}}">{{post.title}}</a></li>
+      {% endif %}
+    {% endfor %}
+
+    </ul>
+    </div>
+
+    {% assign found = false %}
+    {% assign counter = counter | plus: 1 %}  
+
+    {% if counter == 2 %}
+      </div>
+      {% assign counter = 0 %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
