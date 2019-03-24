@@ -8,7 +8,7 @@
 
 code.highlighter-rouge
 {
-  color: $meta-color;
+  color: $link-color;
 
   font-family: monospace;
   font-size: 0.8em;
@@ -16,8 +16,6 @@ code.highlighter-rouge
 
 pre.highlight
 {
-  border: 2px solid $meta-color;
-
   font-family: monospace;
   font-size: 1.1em;
   line-height: 16px;
