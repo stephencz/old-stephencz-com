@@ -1,13 +1,16 @@
 /*******************************************************************/
 /* POST STRUCTURE                                                  */
 /*******************************************************************/
-.post-wrapper { }
+.post-wrapper 
+{
+    padding-bottom: 120px;
+}
 
 @media (max-width: 799px) 
 {
     .post-wrapper
     {
-        padding-top: 40px;
+        padding-top: 120px;
     }
 }
 
@@ -16,8 +19,8 @@
     font-size: $h1_size;
     font-weight: 700;
     text-align: center;
-
-    margin-bottom: 15px;
+    
+    margin-bottom: 10px;
 }
 
 .post-wrapper > .post-title a:active,
@@ -94,7 +97,6 @@
 .post-wrapper > .post-body a:link
 {
     color: $link-color;
-    text-decoration: underline;
 }
 
 .post-wrapper > .post-body a:hover
@@ -102,9 +104,25 @@
     color: $hover-color;
 }
 
+.post-wrapper > .post-body > h1,
+.post-wrapper > .post-body > h2,
+.post-wrapper > .post-body > h3,
+.post-wrapper > .post-body > h4,
+.post-wrapper > .post-body > h5,
+.post-wrapper > .post-body > h6
+{
+    margin-bottom: 5px;
+}
+
+.post-wrapper > .post-body > h1,
+.post-wrapper > .post-body > h2
+{
+    border-bottom: 1px dotted #000;
+}
+
 .post-wrapper > .post-body > p
 {
-    padding-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .post-wrapper > .post-body > p > em{ font-style: italic; }
@@ -165,7 +183,7 @@
     font-size: 1.6em;
     list-style: decimal;
 
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding-left: 40px;
 }
 
@@ -180,7 +198,7 @@
     font-size: 1.6em;
     list-style: disc;
 
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding-left: 40px;
 }
 
@@ -195,7 +213,7 @@
 .post-wrapper > .post-body > dl
 {
     font-size: 1.6em;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding-left: 40px;
 }
 

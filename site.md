@@ -6,31 +6,32 @@ description: Information about this website.
 *This page is dedicated to information about this website. If you want to learn about me*
 *check out the [About](/about) page.*
 
-## Content Structure
+## What is this Website About?
+This website is about
 
 ## Technical Overview
-{:.padding-t-m}
 
 In this section I will attempt to give an overview of the tools and methods I used when creating this website.
 
 ### Why Jekyll?
-{:.padding-t-xs}
 
 The core tool which this website uses is the static site generator [Jekyll](https://jekyllrb.com/).
 A static website is a website which serves its web pages as they are stored.
-There is little reliance on server-side applications to dynamically retrieve or generate content.
-Pages are stored on the server as HTML files, and they are served from the web server to your web browser as HTML files[^1].
+There is no reliance on server-side applications to dynamically retrieve or generate content.
+Pages are stored on the server as HTML files, and they are served to your web browser as HTML files[^1].
 The benefit of building and using a static website is that they are often *much* faster than their dynamic counterparts.
 Espcially, when the website is stored on a shared web server[^2].
 
-The major downside, at least in the past, of using a static website is that they are... static. 
+The major downside of using a static website is that they are... static. 
+
 You see that simple looking sidebar at the top left of this page?
 That sidebar appears on almost every single page of this website.
-And each page of this website is a seperate file.
-That means that if I was to maintain this website manually I would have to copy the code for the sidebar into *every single file*.
+Each page of this website is a seperate file.
+That means that if I were to maintain this website manually I would have to copy the code for the sidebar into *every single file*.
 What happens if I want to change something about the sidebar?
 I would have to go into every single file, and make the changes.
-That would be an immense amount of work and would leave this website open to wild inconsistency and error.
+Doing this would be an immense amount of work and would leave this website open to wild inconsistency and error.
+
 A manually maintained static website is not an ideal solution.
 
 Traditionally, the solution to is to keep the code for the sidebar in a single file, and dynamically insert that code where it is needed. 
@@ -46,7 +47,7 @@ This is an acceptable solution and is used by popular content management systems
 Dynamic solutions which rely on the web server to retrieve or generate content can yield highly maintable and highly dynamic websites.
 
 The flaw with this solution stems primiarly from the limitations of cheap web hosting. 
-The majority of those ten dollar a month web hosting plans that you see are shared hosting services.
+The majority of those five dollar a month web hosting plans that you see are shared hosting services.
 This means that your website will be hosted on a web server which contains many other websites.
 If your website is running a CMS such as WordPress, than chances are your website will exist on a web server containing many other websites *also running WordPress*.
 Because of the server-side overhead of many WordPress websites performing many server-side operations, more often than not, your website will have poor and inconsistent performance.
@@ -63,13 +64,26 @@ And, with Jekyll being a "static site generator", the end result of a site build
 The only overhead on the server-side will be the overhead introduced by the programmer.
 Which means that in most cases your website will be faster than a website running on a content management system.
 
-While Jekyll might not be the best choice for every web design project, it was right choice for mine, and I recommend it to anyone wanting to make a similar project.
-
+It is fast. It is dynamic. It is extensible. It gets the job done, how I want it done.
 
 ### CSS Dependencies and Code Style
-{:.padding-t-s}
+{:.padding-t-m}
 
-This website uses two CSS libraries: Eric Meyer's [Reset](https://meyerweb.com/eric/tools/css/reset/) and a modified version of [Skeleton](http://getskeleton.com/).
+This website uses two CSS libraries: [Eric Meyer's Reset](https://meyerweb.com/eric/tools/css/reset/) and a modified version of [Skeleton](http://getskeleton.com/).
+
+Skeleton is a lightweight CSS framework for responsive web design. 
+Or, in other words, it is a bit of CSS which makes supporting both large screen devices and mobile devices easy.
+This website was the first project I used Skeleton on.
+In the past I used [Bootstrap](https://getbootstrap.com/).
+I chose Skeleton over Bootstrap because I didn't feel like I needed all the features bootstrap offers. 
+I just want something small that gets the job done.
+The version of Skeleton I use has been slightly modified as I have stripped out over two hundred lines of CSS which I don't use.
+
+Eric Meyer's Reset is a CSS reset I use to get my website's styles to a workable baseline. As Eric Meyer's website states:
+
+> The goal of a reset stylesheet is to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, and so on.
+
+
 
 
 [^1]: The flip side to a static website is a dynamic website. Websites built with content management systems
