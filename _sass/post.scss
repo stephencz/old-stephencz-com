@@ -105,12 +105,17 @@
 }
 
 .post-wrapper > .post-body > h1,
-.post-wrapper > .post-body > h2,
+.post-wrapper > .post-body > h2
+{
+    margin-top: 80px;
+}
+
 .post-wrapper > .post-body > h3,
 .post-wrapper > .post-body > h4,
 .post-wrapper > .post-body > h5,
 .post-wrapper > .post-body > h6
 {
+    margin-top: 40px;
     margin-bottom: 5px;
 }
 
@@ -122,7 +127,7 @@
 
 .post-wrapper > .post-body > p
 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .post-wrapper > .post-body > p > em{ font-style: italic; }
@@ -183,7 +188,9 @@
     font-size: 1.6em;
     list-style: decimal;
 
-    margin-bottom: 30px;
+    line-height: $line-height;
+
+    margin-bottom: 20px;
     padding-left: 40px;
 }
 
@@ -198,14 +205,14 @@
     font-size: 1.6em;
     list-style: disc;
 
-    margin-bottom: 30px;
+    line-height: $line-height;
+
+    margin-bottom: 20px;
     padding-left: 40px;
 }
 
 .post-wrapper > .post-body > ul li
 {
-    line-height: $line-height;
-
     padding-top: 5px;
     padding-bottom: 5px;
 }

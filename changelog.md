@@ -14,5 +14,5 @@ description: A description of all the changes made to the website and its conten
 {:.padding-t-s}
 
 * Finished redesign and published site. For an in depth look at this website's implementation 
-  details take a look at the <a href="/site#technical-details">Technical Overview</a> on the <a href="/site">Site</a> page.
+  details take a look at the <a href="/site#technical-brief">Technical Brief</a> on the <a href="/site">Site</a> page.
 * Began the <a href="/posts/recommended-literature">Recommended Literature</a> post.
