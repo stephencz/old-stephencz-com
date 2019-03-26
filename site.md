@@ -7,15 +7,20 @@ description: Information about this website.
 *check out the [About](/about) page.*
 
 ## What is this Website About?
+{:.margin-top-xl}
+
+### Posts and Pages
 {:.margin-top-m}
 
+This website consists of two types of content: Posts and Pages.
 
+Posts are meant to be flexible
 
 ## Technical Brief
 {:.margin-top-xl}
 
 ### Jekyll
-{:.margin-top-m}
+{:.margin-top-s}
 The core tool this website uses is the static site generator [Jekyll](https://jekyllrb.com/).
 This website is the first project I've used Jekyll on.
 In all prior web design projects I either used a content management system such as [WordPress](https://wordpress.com/), or wrote my own basic content management system.

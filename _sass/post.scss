@@ -1,6 +1,9 @@
 /*******************************************************************/
-/* POST STRUCTURE                                                  */
+/* POST STYLES                                                     */
 /*******************************************************************/
+
+
+//POST WRAPPER *******************************************************************/
 .post-wrapper 
 {
     padding-bottom: 120px;
@@ -14,6 +17,9 @@
     }
 }
 
+
+
+//POST TITLE STYLES *******************************************************************/
 .post-wrapper > .post-title
 {
     font-size: $h1_size;
@@ -31,6 +37,9 @@
     color: #000;
 }
 
+
+
+//POST METADATA STYLES *******************************************************************/
 .post-wrapper > .post-metadata
 {
     font-size: 1.4em;
@@ -89,9 +98,9 @@
     display: inline-block;
 }
 
-/*******************************************************************/
-/* POST STYLES                                                     */
-/*******************************************************************/
+
+
+//LINK STYLES *******************************************************************/
 .post-wrapper > .post-body a:active,
 .post-wrapper > .post-body a:visited,
 .post-wrapper > .post-body a:link
@@ -104,6 +113,9 @@
     color: $hover-color;
 }
 
+
+
+//HEADER STYLES *******************************************************************/
 .post-wrapper > .post-body > h1,
 .post-wrapper > .post-body > h2
 {
@@ -120,6 +132,9 @@
     margin-bottom: 5px;
 }
 
+
+
+//PARAGRAPH STYLES *******************************************************************/
 .post-wrapper > .post-body > p
 {
     margin-bottom: 20px;
@@ -129,29 +144,17 @@
 .post-wrapper > .post-body > p > strong{ font-weight: 700; }
 .post-wrapper > .post-body > p > em > strong{ font-weight: 700; }
 
-.post-wrapper > .post-body > p > sub, 
-.post-wrapper > .post-body > p > sup
-{
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-}
 
-.post-wrapper > .post-body > p > sup
-{
-    top: -0.5em;
-}
 
-.post-wrapper > .post-body > p > sub
-{
-    bottom: -0.25em;
-}
-
+//HORIZONTAL LINE STYLE *******************************************************************/
 .post-wrapper > .post-body > hr
 {
     border-top: 1px dotted $faded-color;
 }
 
+
+
+//BLOCKQUOTE STYLES *******************************************************************/
 .post-wrapper > .post-body > blockquote
 {
     border-left: 5px solid $meta-color;
@@ -178,6 +181,9 @@
    padding-left: 30px;
 }
 
+
+
+//ORDERED LIST STYLES *******************************************************************/
 .post-wrapper > .post-body > ol
 {
     font-size: 1.6em;
@@ -195,6 +201,9 @@
     padding-bottom: 5px;
 }
 
+
+
+//UNORDERED LIST STYLES *******************************************************************/
 .post-wrapper > .post-body > ul
 {
     font-size: 1.6em;
@@ -212,6 +221,9 @@
     padding-bottom: 5px;
 }
 
+
+
+//DEFINITIONLIST STYLES *******************************************************************/
 .post-wrapper > .post-body > dl
 {
     font-size: 1.6em;
@@ -244,6 +256,8 @@
 }
 
 
+
+//TABLE STYLES *******************************************************************/
 .post-wrapper > .post-body > table 
 {
     border-collapse: collapse;
@@ -276,8 +290,33 @@
     background: #cacaca;
 }
 
+
+.post-wrapper > .post-body > table td.smallest
+{
+    white-space: nowrap;
+    width: 1px;
+}
+
+
+
+//SUBSCRIPT AND SUPER SCRIPT STYLES *******************************************************************/
+.post-wrapper > .post-body > p > sub, 
 .post-wrapper > .post-body > p > sup
 {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+}
+
+.post-wrapper > .post-body > p > sub
+{
+    bottom: -0.25em;
+}
+
+.post-wrapper > .post-body > p > sup
+{
+    top: -0.5em;
+
     padding-left: 1px;
 }
 
@@ -289,11 +328,12 @@
     font-weight: 700;
 }
 
-
 .post-wrapper > .post-body > p > sup > a.footnote::before { content: "["; }
 .post-wrapper > .post-body > p > sup > a.footnote::after { content: "]"; }
 
 
+
+//FOOTNOTE DIV AND LIST STYLES *******************************************************************/
 .post-wrapper > .post-body > .footnotes
 {
     border-top: 1px dotted $faded-color;
@@ -328,4 +368,103 @@
 .post-wrapper > .post-body > .mjx-chtml
 {
     font-size: 1.6em;
+}
+
+
+
+/*******************************************************************/
+/* GENERAL POST FORMATTING STYLES                                  */
+/*******************************************************************/
+.post-wrapper > .post-body > .padding-top-xs{ padding-top: 10px; }
+.post-wrapper > .post-body > .padding-top-s{ padding-top: 20px; }
+.post-wrapper > .post-body > .padding-top-m{ padding-top: 40px; }
+.post-wrapper > .post-body > .padding-top-l{ padding-top: 60px; }
+.post-wrapper > .post-body > .padding-top-xl{ padding-top: 80px; }
+.post-wrapper > .post-body > .padding-top-xxl{ padding-top: 100px; }
+
+.post-wrapper > .post-body > .padding-bottom-xs{ padding-bottom: 10px; }
+.post-wrapper > .post-body > .padding-bottom-s{ padding-bottom: 20px; }
+.post-wrapper > .post-body > .padding-bottom-m{ padding-bottom: 40px; }
+.post-wrapper > .post-body > .padding-bottom-l{ padding-bottom: 60px; }
+.post-wrapper > .post-body > .padding-bottom-xl{ padding-bottom: 80px; }
+.post-wrapper > .post-body > .padding-bottom-xxl{ padding-bottom: 100px; }
+
+.post-wrapper > .post-body > .margin-top-xs{ margin-top: 10px; }
+.post-wrapper > .post-body > .margin-top-s{ margin-top: 20px; }
+.post-wrapper > .post-body > .margin-top-m{ margin-top: 40px; }
+.post-wrapper > .post-body > .margin-top-l{ margin-top: 60px; }
+.post-wrapper > .post-body > .margin-top-xl{ margin-top: 80px; }
+.post-wrapper > .post-body > .margin-top-xxl{ margin-top: 100px; }
+
+.post-wrapper > .post-body > .margin-bottom-xs{ margin-bottom: 10px; }
+.post-wrapper > .post-body > .margin-bottom-s{ margin-bottom: 20px; }
+.post-wrapper > .post-body > .margin-bottom-m{ margin-bottom: 40px; }
+.post-wrapper > .post-body > .margin-bottom-l{ margin-bottom: 60px; }
+.post-wrapper > .post-body > .margin-bottom-xl{ margin-bottom: 80px; }
+.post-wrapper > .post-body > .margin-bottom-xxl{ margin-bottom: 100px; }
+
+.post-wrapper > .post-body > .margin-top-10{ margin-top: 10px; }
+.post-wrapper > .post-body > .margin-top-20{ margin-top: 20px; }
+.post-wrapper > .post-body > .margin-top-30{ margin-top: 30px; }
+.post-wrapper > .post-body > .margin-top-40{ margin-top: 40px; }
+.post-wrapper > .post-body > .margin-top-50{ margin-top: 50px; }
+.post-wrapper > .post-body > .margin-top-60{ margin-top: 60px; }
+.post-wrapper > .post-body > .margin-top-70{ margin-top: 70px; }
+.post-wrapper > .post-body > .margin-top-80{ margin-top: 80px; }
+.post-wrapper > .post-body > .margin-top-90{ margin-top: 90px; }
+.post-wrapper > .post-body > .margin-top-100{ margin-top: 100px; }
+.post-wrapper > .post-body > .margin-top-110{ margin-top: 110px; }
+.post-wrapper > .post-body > .margin-top-120{ margin-top: 120px; }
+
+.post-wrapper > .post-body > .margin-bottom-10{ margin-bottom: 10px; }
+.post-wrapper > .post-body > .margin-bottom-20{ margin-bottom: 20px; }
+.post-wrapper > .post-body > .margin-bottom-30{ margin-bottom: 30px; }
+.post-wrapper > .post-body > .margin-bottom-40{ margin-bottom: 40px; }
+.post-wrapper > .post-body > .margin-bottom-50{ margin-bottom: 50px; }
+.post-wrapper > .post-body > .margin-bottom-60{ margin-bottom: 60px; }
+.post-wrapper > .post-body > .margin-bottom-70{ margin-bottom: 70px; }
+.post-wrapper > .post-body > .margin-bottom-80{ margin-bottom: 80px; }
+.post-wrapper > .post-body > .margin-bottom-90{ margin-bottom: 90px; }
+.post-wrapper > .post-body > .margin-bottom-100{ margin-bottom: 100px; }
+.post-wrapper > .post-body > .margin-bottom-110{ margin-bottom: 110px; }
+.post-wrapper > .post-body > .margin-bottom-120{ margin-bottom: 120px; }
+
+.post-wrapper > .post-body > .padding-top-10{ padding-top: 10px; }
+.post-wrapper > .post-body > .padding-top-20{ padding-top: 20px; }
+.post-wrapper > .post-body > .padding-top-30{ padding-top: 30px; }
+.post-wrapper > .post-body > .padding-top-40{ padding-top: 40px; }
+.post-wrapper > .post-body > .padding-top-50{ padding-top: 50px; }
+.post-wrapper > .post-body > .padding-top-60{ padding-top: 60px; }
+.post-wrapper > .post-body > .padding-top-70{ padding-top: 70px; }
+.post-wrapper > .post-body > .padding-top-80{ padding-top: 80px; }
+.post-wrapper > .post-body > .padding-top-90{ padding-top: 90px; }
+.post-wrapper > .post-body > .padding-top-100{ padding-top: 100px; }
+.post-wrapper > .post-body > .padding-top-110{ padding-top: 110px; }
+.post-wrapper > .post-body > .padding-top-120{ padding-top: 120px; }
+
+.post-wrapper > .post-body > .padding-bottom-10{ padding-bottom: 10px; }
+.post-wrapper > .post-body > .padding-bottom-20{ padding-bottom: 20px; }
+.post-wrapper > .post-body > .padding-bottom-30{ padding-bottom: 30px; }
+.post-wrapper > .post-body > .padding-bottom-40{ padding-bottom: 40px; }
+.post-wrapper > .post-body > .padding-bottom-50{ padding-bottom: 50px; }
+.post-wrapper > .post-body > .padding-bottom-60{ padding-bottom: 60px; }
+.post-wrapper > .post-body > .padding-bottom-70{ padding-bottom: 70px; }
+.post-wrapper > .post-body > .padding-bottom-80{ padding-bottom: 80px; }
+.post-wrapper > .post-body > .padding-bottom-90{ padding-bottom: 90px; }
+.post-wrapper > .post-body > .padding-bottom-100{ padding-bottom: 100px; }
+.post-wrapper > .post-body > .padding-bottom-110{ padding-bottom: 110px; }
+.post-wrapper > .post-body > .padding-bottom-120{ padding-bottom: 120px; }
+
+.post-wrapper > .post-body > .underline-light{ border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+.post-wrapper > .post-body > .underline-medium{ border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+.post-wrapper > .post-body > .underline-dark{ border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+.post-wrapper > .post-body > .underline-solid { border-bottom: 1px solid #000; }
+.post-wrapper > .post-body > .overline-solid{ border-top: 1px solid #000; }
+.post-wrapper > .post-body > .underline-dotted{ border-bottom: 1px dotted #000; }
+.post-wrapper > .post-body > .overline-dotted{ border-top: 1px dotted #000; }
+
+.post-wrapper > .post-body > .underline-text
+{
+    text-decoration: underline;
+    font-style: normal;
 }
