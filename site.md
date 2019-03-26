@@ -7,12 +7,15 @@ description: Information about this website.
 *check out the [About](/about) page.*
 
 ## What is this Website About?
+{:.margin-top-m}
+
 
 
 ## Technical Brief
-In this section I will give a brief overview of the tools and methods I when creating this website.
+{:.margin-top-xl}
 
 ### Jekyll
+{:.margin-top-m}
 The core tool this website uses is the static site generator [Jekyll](https://jekyllrb.com/).
 This website is the first project I've used Jekyll on.
 In all prior web design projects I either used a content management system such as [WordPress](https://wordpress.com/), or wrote my own basic content management system.
@@ -22,6 +25,8 @@ And, thanks to the templating engine [Liquid](https://shopify.github.io/liquid/)
 
 
 ### Eric Meyer's Reset
+{:.margin-top-m}
+
 Most modern websites use some form of reset. I use [Eric Meyer's Reset](https://meyerweb.com/eric/tools/css/reset/).
 
 As Eric Meyer's website states:
@@ -33,6 +38,9 @@ Eric Meyer's Reset provides me with a clean baseline to work from.
 
 
 ### Skeleton
+{:.margin-top-m}
+
+
 [Skeleton](http://getskeleton.com/) is a small CSS library for responsive design.
 In the past I have used [Bootstrap](https://getbootstrap.com/), but for this project I wanted something which I could fully wrap my head around.
 This website's structure is simple, so I figured I could go without the extra features which come with Bootstrap.
@@ -41,6 +49,8 @@ It clocks in at just over one hundred and fifty lines, and gets the job done.
 
 
 ### Strict CSS Style
+{:.margin-top-m}
+
 From my past projects I've notice that CSS code has a tendency to devolve into [spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code).
 I absolutely hate having to hunt down and override CSS rules. 
 Accordingly, I've adopted a strict style of writing CSS for this project.
@@ -72,6 +82,6 @@ Here is an example of what most rules using this style look like:
 ```
 
 While I think this style *does* result in having to write more code overall, what that code does is clear.
-By using the child combinator chains with most rule-sets the effect of rules is precise.
+By using a chain of child combinators each rule is encapsulated into a structure which has precise effect.
 In addition, the HTML code is indirectly restricted into the form of the rule-sets.
 The stylesheet for this website can be found [here](/assets/css/base.css).

@@ -23,23 +23,14 @@
 
     padding-top: 10px;
     padding-bottom: 10px;
+
+    border-bottom: 1px dotted #000; 
 }
 
 .sidebar-wrapper > ul.sidebar-navigation li
 {
     padding-top: 5px;
     padding-bottom: 5px;
-}
-
-.sidebar-wrapper > ul.sidebar-navigation #site  
-{
-    border-bottom: 1px dotted #000; 
-    padding-bottom: 10px; 
-}
-
-.sidebar-wrapper > ul.sidebar-navigation #changelog
-{ 
-    padding-top: 15px; 
 }
 
 .sidebar-wrapper > ul.sidebar-navigation li a:active,
@@ -59,17 +50,4 @@
 {
     color: #000;
 }
-
-.sidebar-wrapper > .sidebar-last-updated
-{
-    border-top: 1px dotted #000;
-    border-bottom: 1px dotted #000;
-
-    font-size: 1.1em;
-    padding: 10px 0px 5px 0px;
-}
-
-
-
-
 

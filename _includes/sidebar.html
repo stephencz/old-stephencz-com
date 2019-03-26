@@ -4,16 +4,11 @@
     
     <ul class="sidebar-navigation">
         {% for item in site.data.navigation %}
-        <li id="{{ item.name | downcase}}">
+        <li>
             <a href="{{ item.link }}" {% if page.url == item.link %} id="current" {% endif %}>
                 {{ item.name }}
             </a>
         </li>
         {% endfor %}
     </ul>
-    
-    <div class="sidebar-last-updated">
-        Built: {{ site.time | date: "%m/%-d/%Y"}}
-    </div>
-
 </div>
