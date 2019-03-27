@@ -6,18 +6,8 @@ description: Information about this website.
 *This page is dedicated to information about this website. If you want to learn about me*
 *check out the [About](/about) page.*
 
-## What is this Website About?
-{:.margin-top-xl}
-
-### Posts and Pages
-{:.margin-top-m}
-
-This website consists of two types of content: Posts and Pages.
-
-Posts are meant to be flexible
-
 ## Technical Brief
-{:.margin-top-xl}
+{:.margin-top-l}
 
 ### Jekyll
 {:.margin-top-s}

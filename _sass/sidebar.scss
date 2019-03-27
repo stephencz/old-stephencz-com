@@ -3,13 +3,22 @@
 /*******************************************************************/
 .sidebar-wrapper 
 { 
-    padding-bottom: 20px; 
+    margin-top: 50px;
 }
+
+
+@media (max-width:800px)
+{
+    .sidebar-wrapper 
+    { 
+        margin-top: 0px;
+        text-align: center;
+    }
+}
+
 
 .sidebar-wrapper > .sidebar-title
 {
-    border-bottom: 1px dotted #000;
-
     font-weight: 700;
     font-size: 2em;
     line-height: 30px;
@@ -23,8 +32,6 @@
 
     padding-top: 10px;
     padding-bottom: 10px;
-
-    border-bottom: 1px dotted #000; 
 }
 
 .sidebar-wrapper > ul.sidebar-navigation li
@@ -51,4 +58,3 @@
     color: #000;
     font-weight: 700;
 }
-
