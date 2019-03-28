@@ -46,6 +46,7 @@
 {
     color: $meta-color;
     text-decoration: none;
+    font-weight: 400;
 }
 
 .sidebar-wrapper > ul.sidebar-navigation li a:hover
@@ -56,5 +57,5 @@
 .sidebar-wrapper > ul.sidebar-navigation li a#current 
 {
     color: #000;
-    font-weight: 700;
+    font-weight: 500;
 }

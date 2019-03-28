@@ -39,6 +39,30 @@ layout: default
             {% endfor %}
             </ul>
         </div>
+
+        {% assign size = page.links | size%}
+        {% if size >= 1 %}
+        <div class="data-list">
+            <div class="header">links: </div>
+            <ul>
+            {% assign i = 1 %}
+            {% for link in page.links %}
+                {% assign num = i | modulo: 2 %}
+                {% if num == 1 %}
+                <li>
+                    <a target="_blank" href="{{page.links[i]}}">
+                        {% assign link_num = page.links | size %}
+                        {{ link }}{% if i != link_num %},{% endif %}
+                    </a>
+                </li>
+                {% endif %}
+
+                {% assign i = i | plus: 1 %}
+            {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
     </div>
     <div class="post-body">{{ content }}</div>
 </div>

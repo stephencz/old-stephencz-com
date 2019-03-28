@@ -8,11 +8,10 @@ description: A description of all the changes made to the website and its conten
 *I will update this page on a monthly basis:*
 
 ## 2019
-{:.padding-t-s .underline-dotted}
+{:.padding-top-m}
 
 ### March
-{:.padding-t-s}
+{:.padding-top-s}
 
-* Finished redesign and published site. For an in depth look at this website's implementation 
-  details take a look at the <a href="/site#technical-brief">Technical Brief</a> on the <a href="/site">Site</a> page.
-* Began the <a href="/posts/recommended-literature">Recommended Literature</a> post.
+* Finished designing website, and published. From a technical viewpoint this website is simple.
+  Short writings on the technical aspects of this website can be found in [Technical Overview](/site#technical-overview) section on the [Site](/site) page.
