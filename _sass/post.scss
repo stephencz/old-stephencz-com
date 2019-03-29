@@ -7,6 +7,7 @@
 .post-wrapper 
 {
     padding-bottom: 120px;
+    margin-top: 60px;
 }
 
 @media (max-width: 799px) 
@@ -26,7 +27,7 @@
     font-weight: 700;
     text-align: center;
     
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .post-wrapper > .post-title a:active,
@@ -45,8 +46,7 @@
     font-size: 1.4em;
     text-align: center;
 
-    padding-bottom: 20px;
-    padding-right: 20px;
+    padding-bottom: 30px;
 }
 
 .post-wrapper > .post-metadata > #description
@@ -78,7 +78,7 @@
 
 .post-wrapper > .post-metadata > .data-list
 {
-    display: block;
+    display: inline-block;
     padding-bottom: 15px;
 }
 
@@ -96,6 +96,7 @@
 .post-wrapper > .post-metadata > .data-list ul li
 {
     display: inline-block;
+    padding-right: 3px;
 }
 
 

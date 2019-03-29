@@ -26,6 +26,28 @@ pre.highlight
   line-height: 16px;
 
   padding: 10px;
+
+  overflow-x: scroll
+}
+
+pre.highlight::-webkit-scrollbar 
+{
+    height: 5px;
+}
+  
+pre.highlight::-webkit-scrollbar-track 
+{
+    background: #232323; 
+}
+  
+pre.highlight::-webkit-scrollbar-thumb 
+{
+    background: #fe8019; 
+}
+  
+pre.highlight::-webkit-scrollbar-thumb:hover 
+{
+    background: #555; 
 }
 
 .highlight table td { padding: 5px; }

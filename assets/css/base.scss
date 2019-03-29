@@ -47,8 +47,8 @@ $line-height: 2em;
 
 $font-color: #222222;
 $meta-color: #a0a0a0;
-$link-color: #b73232;
-$hover-color: #561111;
+$link-color: #d46b16;
+$hover-color: #ff9b4a;
 $faded-color: rgba(1, 1, 1, 0.2);
 
 $h1-size: 4em;
@@ -110,8 +110,9 @@ a:link
 a:hover
 {
     color: $hover-color;
-    font-weight: 700;
 }
+
+
 
 @import "sidebar";
 @import "post";
