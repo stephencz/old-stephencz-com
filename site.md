@@ -6,6 +6,11 @@ description: Information about this website.
 *This page is dedicated to information about this website. If you want to learn about me*
 *read the [About](/about) page.*
 
+## Content Overview
+{:.margin-top-l}
+
+
+
 ## Technical Overview
 {:.margin-top-l}
 
