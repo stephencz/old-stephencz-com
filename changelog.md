@@ -10,10 +10,14 @@ description: A description of all the changes made to the website and its conten
 ## 2019
 {:.padding-top-m}
 
+### Apirl
+{:.padding-top-s}
+* Continued work on the [About](/about) and [Site](/site) pages.
+
+
 ### March
 {:.padding-top-s}
 
-* Finished designing website, and published. From a technical viewpoint this website is simple.
-  Short writings on the technical aspects of this website can be found in [Technical Overview](/site#technical-overview) section on the [Site](/site) page.
+* Finished designing website, and published.
 * Created [Scripts](/posts/scripts) post.
 * Created [Book List](/posts/book-list) post.

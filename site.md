@@ -10,33 +10,83 @@ description: Information about this website.
 {:.margin-top-l}
 
 
+### What is this Website About? 
+{:.margin-top-m}
+
+
+
+### Organization
+{:.margin-top-m}
+
+The majority of this websites's content is arranged in **posts** and **pages**.
+There are two main differences between posts and pages:
+
+1. Posts are tracked by the category system, while pages are not.
+2. And posts have metadata, while pages do not.
+
+I use pages for storing information which won't change drastically.
+For an example, consider this page.
+This page details the structure of my website's content, and the implementation details behind the website.
+While new features and content may be added over time, the foundations probably won't change.
+
+Posts, unlike pages, are intended to be more dynamic.
+They are projects which grow overtime, until they reach completion.
+The great benefit of a website is that information is stored in bits and bytes, not ink and paper.
+Ideas and understandings shift, information changes, and my website should reflect those changes.
+
+#### Metadata
+{:.margin-top-m}
+
+I got the idea of post metadata from [gwern.net](https://www.gwern.net).
+Post metadata is information about a post which is available at a glance.
+As of April 2019, posts can have five pieces of metadata:
+
+* **created** - the date the post was first created.
+* **updated** - the date the post was last updated.
+* **status** - the status of the post. Technically the value of status could be anything, but some common statuses are *on-going*, *continuous*, and *completed*.
+* **categories** - the categories the post belong to. The first category listed is considered the primary category.
+* **links** - links relevant to the post.
+
+#### Categories
+{:.margin-top-m}
+
+As mentioned in the post metadata section, posts belong to categories.
+I felt that shoving a post into a single category was too rigid.
+To loosen things up I created a system of primary and secondary categories.
+The first category listed in a post's metadata, and the cateogry it appears in on the home page, is a post's primary category.
+All categories after the first one, are considered secondary.
+
+The reason I did this is because posts are often not about just one thing.
+While a post may be *mostly* about programming, it might also be about mathematics and philosophy.
+This system of distinction between primary and secondary categories is merely a way of staying what a post is primarily about, while not neglecting the smaller parts.
+Additionally, it allows for category pages, the [collections](/categories/collections/) category page for example, to index any post that has its category.
+
 
 ## Technical Overview
 {:.margin-top-l}
 
-This section contains a series of vignettes about the technical side of this website.
-
 ### Jekyll
 {:.margin-top-m}
 The core tool this website uses is the static site generator [Jekyll](https://jekyllrb.com/).
-This website is the first project I've used Jekyll on.
-In all prior web design projects I either used a content management system such as [WordPress](https://wordpress.com/), or wrote my own basic content management system.
+This is the first project I've used Jekyll on.
+In all prior web design projects I used either a content management system such as [WordPress](https://wordpress.com/), or wrote my own basic content management system.
+
 I chose Jekyll because I wanted a website which was fast and simple.
-Jekyll, being a static site generator, produces fast websites.
-And, thanks to the templating engine [Liquid](https://shopify.github.io/liquid/) and the ability to write plugins with [Ruby](https://www.ruby-lang.org/en/), dynamism similar to a content management system.
+Jekyll, being a static site generator, produces static websites which are typically faster than dynamic websites.
+And, thanks to the templating engine [Liquid](https://shopify.github.io/liquid/) and the ability to write plugins with [Ruby](https://www.ruby-lang.org/en/), Jekyll is dynamic and extensible like content management systems.
 
 
 ### Eric Meyer's Reset
 {:.margin-top-l}
 
-Most modern websites use some form of reset. I use [Eric Meyer's Reset](https://meyerweb.com/eric/tools/css/reset/).
+Most modern websites use some form of CSS reset. I use [Eric Meyer's Reset](https://meyerweb.com/eric/tools/css/reset/).
 
 As Eric Meyer's website states:
 
 > The goal of a reset stylesheet is to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, and so on. 
 
-When designing a website I don't want to worry about overriding individual browser styles.
-Eric Meyer's Reset provides me with a clean baseline to work from.
+When designing a website I don't want to worry about overriding browser styles.
+I want a clean foundation to build my code on.
 
 
 ### Skeleton
@@ -44,8 +94,8 @@ Eric Meyer's Reset provides me with a clean baseline to work from.
 
 
 [Skeleton](http://getskeleton.com/) is a small CSS library for responsive design.
-In the past I have used [Bootstrap](https://getbootstrap.com/), but for this project I wanted something which I could fully wrap my head around.
-This website's structure is simple, so I figured I could go without the extra features which come with Bootstrap.
+In the past I have used [Bootstrap](https://getbootstrap.com/), but for this project I wanted something I could wrap my head around.
+This website's structure is simple, so I don't need the extra features which Bootstrap provides.
 I've [modified my version of Skeleton](/assets/css/skeleton.css) by removing the styles I didn't want.
 It clocks in at just over one hundred and fifty lines, and gets the job done.
 
@@ -53,8 +103,9 @@ It clocks in at just over one hundred and fifty lines, and gets the job done.
 ### Strict CSS
 {:.margin-top-l}
 
-From my past projects I've notice that CSS code has a tendency to devolve into [spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code).
+From my past projects I've notice that CSS has a tendency to devolve into [spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code).
 I hate having to hunt down and override CSS rules. 
+I want my styling to be precise.
 Accordingly, I've adopted a strict style of writing CSS for this project.
 
 There are three central practices to this "strict" code style:
@@ -84,6 +135,6 @@ Here is an example of what most rules using this style look like:
 ```
 
 While this style *does* result in having to write more code overall, what that code does is clear.
-By using a chain of child combinators each rule is encapsulated into a structure which has precise effect.
-In addition, the HTML code is indirectly restricted into the form of the rule-sets.
+By using a chain of child combinators each rule is encapsulated in a structure which has precise effect.
+In addition, the HTML code is restricted into the hierachy of the CSS rule-sets.
 The stylesheet for this website can be found [here](/assets/css/base.css).
