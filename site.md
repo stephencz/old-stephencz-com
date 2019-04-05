@@ -16,7 +16,7 @@ description: Information about this website.
 
 
 ### Organization
-{:.margin-top-m}
+{:.margin-top-l}
 
 The majority of this websites's content is arranged in **posts** and **pages**.
 There are two main differences between posts and pages:
@@ -35,7 +35,7 @@ The great benefit of a website is that information is stored in bits and bytes, 
 Ideas and understandings shift, information changes, and my website should reflect those changes.
 
 #### Metadata
-{:.margin-top-m}
+{:.margin-top-l}
 
 I got the idea of post metadata from [gwern.net](https://www.gwern.net).
 Post metadata is information about a post which is available at a glance.
@@ -48,7 +48,7 @@ As of April 2019, posts can have five pieces of metadata:
 * **links** - links relevant to the post.
 
 #### Categories
-{:.margin-top-m}
+{:.margin-top-l}
 
 As mentioned in the post metadata section, posts belong to categories.
 I felt that shoving a post into a single category was too rigid.
@@ -63,7 +63,7 @@ Additionally, it allows for category pages, the [collections](/categories/collec
 
 
 ## Technical Overview
-{:.margin-top-l}
+{:.margin-top-xl}
 
 ### Jekyll
 {:.margin-top-m}

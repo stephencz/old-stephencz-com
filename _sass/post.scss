@@ -213,6 +213,26 @@
 
 
 
+//UNSTYLED LIST STYLES *******************************************************************/
+.post-wrapper > .post-body > ul.unstyled
+{
+    font-size: 1.6em;
+    list-style: none;
+
+    line-height: $line-height;
+
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+.post-wrapper > .post-body > ul.unstyled li
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
 //DEFINITIONLIST STYLES *******************************************************************/
 .post-wrapper > .post-body > dl
 {

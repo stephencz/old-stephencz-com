@@ -1,22 +1,18 @@
 ---
 layout: post
-title: Book List
-description: An on-going list tracking the books I've read.
-listed: true
-was_updated: true
-update_date: 2019-04-1
-status: continuous
+title: Books I've Read
+description: An on-going list of books I've read. 
 categories: [books, collections, self]
-links: [Goodreads, "https://www.goodreads.com/user/show/33094962-stephen-czekalski"]
+updated: 2019-04-5
+status: continuous
+links: []
+custom: []
 ---
 
 
 
-**Currently Reading:** *The Republic* by Plato
+**Currently Reading:** *East of Eden* by John Steinbeck
 
-
-## 2019
-{:.padding-top-l}
 
 ## Prior to 2019
 {:.padding-top-l}

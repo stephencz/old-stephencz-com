@@ -3,67 +3,7 @@ layout: default
 ---
 <div class="post-wrapper"> 
     <h1 class="post-title">{{ page.title }}</h1>
-    <div class="post-metadata">
-        <div id="description">{{ page.description }}</div>
-    
-        <div class="data-item">
-            <div class="header">created: </div>
-            <div class="value">{{ page.date | date: "%B %-d, %Y" }}</div>
-        </div>
-    
-        {% if page.was_updated %}
-        <div class="data-item">
-            <div class="header">updated: </div>
-            <div class="value">{{ page.update_date | date: "%B %-d, %Y" }}</div>
-        </div>
-        {% endif %}
-    
-        <div class="data-item">
-            <div class="header">status: </div>
-            <div class="value">{{ page.status }}</div>
-        </div>
-    
-        <div class="data-item">
-            <div class="header">categories: </div>
-            <ul>
-            {% assign i = 1 %}
-            {% for cat in page.categories %}
-                <li>
-                    <a href="/categories/{{cat}}">
-                        {% assign cat_num = page.categories | size %}
-                        {{ cat }}{% if i != cat_num %},{% endif %}
-                    </a>
-                </li>
-    
-                {% assign i = i | plus: 1 %}
-            {% endfor %}
-            </ul>
-        </div>
-
-        {% assign size = page.links | size%}
-        {% if size >= 1 %}
-        <div class="data-item">
-            <div class="header">links: </div>
-            <ul>
-            {% assign i = 1 %}
-            {% for link in page.links %}
-                {% assign num = i | modulo: 2 %}
-                {% if num == 1 %}
-                <li>
-                    <a target="_blank" href="{{page.links[i]}}">
-                        {% assign link_num = page.links | size %}
-                        {{ link }}{% if i != link_num %},{% endif %}
-                    </a>
-                </li>
-                {% endif %}
-
-                {% assign i = i | plus: 1 %}
-            {% endfor %}
-            </ul>
-        </div>
-        {% endif %}
-
-    </div>
+    {% include metadata.html %}
     <div class="post-body">{{ content }}</div>
 </div>
 

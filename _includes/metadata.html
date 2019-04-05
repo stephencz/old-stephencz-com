@@ -1,0 +1,87 @@
+<div class="post-metadata">
+
+<!-- METADATA POST DESCRIPTION -->
+<div id="description">{{ page.description }}</div>
+
+<!-- METADATA CREATED DATE -->
+<div class="data-item">
+    <div class="header">created: </div>
+    <div class="value">{{ page.date | date: "%B %-d, %Y" }}</div>
+</div>
+
+<!-- METADATA UPDATE DATE -->
+{% if page.updated != Nil %}
+<div class="data-item">
+    <div class="header">updated: </div>
+    <div class="value">{{ page.updated | date: "%B %-d, %Y" }}</div>
+</div>
+{% endif %}
+
+<!-- METADATA STATUS -->
+{% if page.status != Nil %}
+<div class="data-item">
+    <div class="header">status: </div>
+    <div class="value">{{ page.status }}</div>
+</div>
+{% endif %}
+
+<!-- METADATA SPECIAL DATA ITEMS -->
+{% assign size = page.custom | size%}
+{% if size >= 2 %}
+    {% assign i = 1 %}
+    {% for custom in page.custom %}
+        {% assign num = i | modulo: 2 %}
+        {% if num == 1 %}
+        <div class="data-item">
+            <div class="header">{{ custom }}:</div>
+            <div class="value">{{ page.custom[i] }}</div>
+        </div>
+        {% endif %}
+        {% assign i = i | plus: 1 %}
+    {% endfor %}
+{% endif %}
+
+<!-- METADATA CATEGORIES -->
+<div class="data-item">
+    <div class="header">categories: </div>
+    <ul>
+    {% assign i = 1 %}
+    {% for cat in page.categories %}
+        <li>
+            <a href="/categories/{{cat}}">
+                {% assign cat_num = page.categories | size %}
+                {{ cat }}{% if i != cat_num %},{% endif %}
+            </a>
+        </li>
+
+        {% assign i = i | plus: 1 %}
+    {% endfor %}
+    </ul>
+</div>
+
+<!-- METADATA LINKS -->
+{% assign size = page.links | size%}
+{% if size >= 2 %}
+<div class="data-item">
+    <div class="header">links: </div>
+    <ul>
+    {% assign i = 1 %}
+    {% for link in page.links %}
+        {% assign num = i | modulo: 2 %}
+        {% if num == 1 %}
+        <li>
+            <a target="_blank" href="{{page.links[i]}}">
+                {% assign link_amount = page.links | size %}
+                {% assign link_num = i | plus: 1 %}
+                {{ link }}{% if link_num != link_amount %},{% endif %}
+            </a>
+        </li>
+        {% endif %}
+
+        {% assign i = i | plus: 1 %}
+    {% endfor %}
+    </ul>
+</div>
+{% endif %}
+
+</div>
