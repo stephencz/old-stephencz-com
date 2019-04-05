@@ -13,7 +13,6 @@ custom: []
 
 **Currently Reading:** *East of Eden* by John Steinbeck
 
-
 ## Prior to 2019
 {:.padding-top-l}
 

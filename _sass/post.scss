@@ -6,7 +6,7 @@
 //POST WRAPPER *******************************************************************/
 .post-wrapper 
 {
-    padding-bottom: 120px;
+    padding-bottom: 60px;
     margin-top: 60px;
 }
 
@@ -14,7 +14,12 @@
 {
     .post-wrapper
     {
-        padding-top: 120px;
+        padding-top: 60px;
+    }
+
+    .welcome-message
+    {
+        padding-top: 0px;
     }
 }
 
@@ -54,13 +59,13 @@
     display: block;
     font-style: italic;
     line-height: $line-height;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 
 .post-wrapper > .post-metadata > .data-item
 {
     display: inline-block;
-    padding-right: 20px;
+    padding-right: 15px;
     padding-bottom: 15px;
 }
 
