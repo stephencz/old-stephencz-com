@@ -18,7 +18,7 @@ description: Information about this website.
 ### Organization
 {:.margin-top-l}
 
-The majority of this websites's content is arranged in **posts** and **pages**.
+The websites's content is arranged in **posts** and **pages**.
 There are two main differences between posts and pages:
 
 1. Posts are tracked by the category system, while pages are not.
@@ -44,6 +44,7 @@ As of April 2019, posts can have five pieces of metadata:
 * **created** - the date the post was first created.
 * **updated** - the date the post was last updated.
 * **status** - the status of the post. Technically the value of status could be anything, but some common statuses are *on-going*, *continuous*, and *completed*.
+* * **custom** - posts can also have multiple custom metadata items. These items display in the same way that the created, updated, and status metadata items display. Currently, there is no support for custom lists.
 * **categories** - the categories the post belong to. The first category listed is considered the primary category.
 * **links** - links relevant to the post.
 
