@@ -18,6 +18,6 @@ description: A description of all the changes made to the website and its conten
 ### March
 {:.padding-top-s}
 
-* Finished designing website, and published.
+* Finished designing website.
 * Created [Scripts](/posts/scripts) post.
 * Created [Book List](/posts/book-list) post.

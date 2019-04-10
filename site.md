@@ -22,30 +22,26 @@ The websites's content is arranged in **posts** and **pages**.
 There are two main differences between posts and pages:
 
 1. Posts are tracked by the category system, while pages are not.
-2. And posts have metadata, while pages do not.
+2. Posts have metadata, while pages do not.
 
-I use pages for storing information which won't change drastically.
-For an example, consider this page.
-This page details the structure of my website's content, and the implementation details behind the website.
-While new features and content may be added over time, the foundations probably won't change.
+I use pages for storing "meta-information": Information which is about the website itself.
+For an example, consider this page. 
+This page contains information about the website's content, organization, and technical details. 
 
-Posts, unlike pages, are intended to be more dynamic.
-They are projects which grow overtime, until they reach completion.
-The great benefit of a website is that information is stored in bits and bytes, not ink and paper.
-Ideas and understandings shift, information changes, and my website should reflect those changes.
+Posts are intended to be more dynamic.
+They hold new content, and may grow and shift overtime.
 
 #### Metadata
 {:.margin-top-l}
 
 I got the idea of post metadata from [gwern.net](https://www.gwern.net).
-Post metadata is information about a post which is available at a glance.
-As of April 2019, posts can have five pieces of metadata:
+Post metadata is information which describes posts at a glance.
+As of April 2019, a post can define as many metadata items as it wants, however there are five metadata items which are common to all posts:
 
 * **created** - the date the post was first created.
 * **updated** - the date the post was last updated.
 * **status** - the status of the post. Technically the value of status could be anything, but some common statuses are *on-going*, *continuous*, and *completed*.
-* * **custom** - posts can also have multiple custom metadata items. These items display in the same way that the created, updated, and status metadata items display. Currently, there is no support for custom lists.
-* **categories** - the categories the post belong to. The first category listed is considered the primary category.
+* **categories** - the categories the post belong to. The first category listed is called the primary category.
 * **links** - links relevant to the post.
 
 #### Categories
@@ -55,12 +51,12 @@ As mentioned in the post metadata section, posts belong to categories.
 I felt that shoving a post into a single category was too rigid.
 To loosen things up I created a system of primary and secondary categories.
 The first category listed in a post's metadata, and the cateogry it appears in on the home page, is a post's primary category.
-All categories after the first one, are considered secondary.
+All subsequent categories are called secondary.
 
 The reason I did this is because posts are often not about just one thing.
-While a post may be *mostly* about programming, it might also be about mathematics and philosophy.
-This system of distinction between primary and secondary categories is merely a way of staying what a post is primarily about, while not neglecting the smaller parts.
-Additionally, it allows for category pages, the [collections](/categories/collections/) category page for example, to index any post that has its category.
+While a post may be *mostly* about Computer Science, it might also be about Mathematics and Philosophy.
+The system of distinction between primary and secondary categories is a way of saying what a post is primarily about, while not neglecting its smaller parts.
+Additionally, it allows for the creation of category pages which index posts by category. For example, see the [collections](/categories/collections/) category page.
 
 
 ## Technical Overview
