@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Books I've Read
-description: An on-going list of books I've read. 
+title: Reading List
+description: An on-going list of things I've read.
 categories: [books, collections, self]
 updated: 2019-04-5
 status: continuous
@@ -11,10 +11,9 @@ custom: []
 
 
 
-**Currently Reading:** *East of Eden* by John Steinbeck
+**Currently Reading:** *East of Eden* by John Steinbeck and *Batman: No Man's Land*.
 
 ## Prior to 2019
-{:.padding-top-l}
 
 Here is everything I remember reading prior to Apirl 2019. Titles will be added to this list as I remember them.
 

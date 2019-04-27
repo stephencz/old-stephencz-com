@@ -9,5 +9,8 @@ kramdown:
     block:
       line_numbers: true
 
+sass:
+  style: compressed
+
 plugins:
   - jekyll-sitemap

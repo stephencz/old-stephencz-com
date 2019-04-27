@@ -7,16 +7,8 @@ description: Information about this website.
 *read the [About](/about) page.*
 
 ## Content Overview
-{:.margin-top-l}
-
-
-### What is this Website About? 
-{:.margin-top-m}
-
-
 
 ### Organization
-{:.margin-top-l}
 
 The websites's content is arranged in **posts** and **pages**.
 There are two main differences between posts and pages:
@@ -27,16 +19,19 @@ There are two main differences between posts and pages:
 I use pages for storing "meta-information": Information which is about the website itself.
 For an example, consider this page. 
 This page contains information about the website's content, organization, and technical details. 
+The information here isn't likely to change drastically.
+Accordingly, I use a page.
 
-Posts are intended to be more dynamic.
-They hold new content, and may grow and shift overtime.
+Posts are designed to be more dynamic and flexible than pages.
+A post can be a one-off write up, or an on-going project.
+Posts make up the bulk of this website's content.
 
 #### Metadata
-{:.margin-top-l}
 
-I got the idea of post metadata from [gwern.net](https://www.gwern.net).
-Post metadata is information which describes posts at a glance.
-As of April 2019, a post can define as many metadata items as it wants, however there are five metadata items which are common to all posts:
+I took the idea of post metadata from [gwern.net](https://www.gwern.net).
+Post metadata is information about posts available at a glance.
+As of April 2019, a post can define as many metadata items as it needs.
+However, there are six metadata items that are inherent to all posts:
 
 * **created** - the date the post was first created.
 * **updated** - the date the post was last updated.
@@ -44,26 +39,20 @@ As of April 2019, a post can define as many metadata items as it wants, however 
 * **categories** - the categories the post belong to. The first category listed is called the primary category.
 * **links** - links relevant to the post.
 
+
 #### Categories
-{:.margin-top-l}
 
-As mentioned in the post metadata section, posts belong to categories.
-I felt that shoving a post into a single category was too rigid.
-To loosen things up I created a system of primary and secondary categories.
-The first category listed in a post's metadata, and the cateogry it appears in on the home page, is a post's primary category.
-All subsequent categories are called secondary.
+Each posts belongs to one or more categories.
 
-The reason I did this is because posts are often not about just one thing.
-While a post may be *mostly* about Computer Science, it might also be about Mathematics and Philosophy.
-The system of distinction between primary and secondary categories is a way of saying what a post is primarily about, while not neglecting its smaller parts.
-Additionally, it allows for the creation of category pages which index posts by category. For example, see the [collections](/categories/collections/) category page.
+The first category a post belongs to is its primary category.
+The primary category describes what a post is *mostly* about.
+It is the category the post will appear under on the home page, and the first cateogory listed in the post's metadata.
 
+All other categories a post belongs to are called secondary categories.
 
 ## Technical Overview
-{:.margin-top-xl}
 
 ### Jekyll
-{:.margin-top-m}
 The core tool this website uses is the static site generator [Jekyll](https://jekyllrb.com/).
 This is the first project I've used Jekyll on.
 In all prior web design projects I used either a content management system such as [WordPress](https://wordpress.com/), or wrote my own basic content management system.
@@ -74,7 +63,6 @@ And, thanks to the templating engine [Liquid](https://shopify.github.io/liquid/)
 
 
 ### Eric Meyer's Reset
-{:.margin-top-l}
 
 Most modern websites use some form of CSS reset. I use [Eric Meyer's Reset](https://meyerweb.com/eric/tools/css/reset/).
 
@@ -87,7 +75,6 @@ I want a clean foundation to build my code on.
 
 
 ### Skeleton
-{:.margin-top-l}
 
 
 [Skeleton](http://getskeleton.com/) is a small CSS library for responsive design.
@@ -98,7 +85,6 @@ It clocks in at just over one hundred and fifty lines, and gets the job done.
 
 
 ### Strict CSS
-{:.margin-top-l}
 
 From my past projects I've notice that CSS has a tendency to devolve into [spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code).
 I hate having to hunt down and override CSS rules. 

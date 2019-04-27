@@ -8,16 +8,15 @@ description: A description of all the changes made to the website and its conten
 *I will update this page on a monthly basis:*
 
 ## 2019
-{:.padding-top-m}
 
 ### Apirl
-{:.padding-top-s}
 * Continued work on the [About](/about) and [Site](/site) pages.
+* Made minor tweaks to the website's design.
+* Created [Achieving Weight Loss](/posts/achieving-weight-loss) post.
 
 
 ### March
-{:.padding-top-s}
 
 * Finished designing website.
 * Created [Scripts](/posts/scripts) post.
-* Created [Book List](/posts/book-list) post.
+* Created [Reading List](/posts/reading-list) post.

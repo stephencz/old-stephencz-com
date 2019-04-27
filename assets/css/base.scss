@@ -21,66 +21,14 @@ $h4-size: 2em;
 $h5-size: 1.8em;
 $h6-size: 1.6em;
 
-html, body
-{
-    color: $font-color;
-    background-color: $bg-color;
+//THIRD-PARTY LIBRARIES
+@import "reset";
+@import "skeleton";
 
-    font-family: $font-stack;
-    font-size: 10px;
-    font-weight: 400;
-
-    margin: 0;
-    padding: 0;
-
-    height: 100%;
-    width: 100%;
-
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased !important;
-    -moz-font-smoothing: antialiased !important;
-    text-rendering: optimizelegibility !important;
-}
-
-h1, h2 { font-weight: 700; }
-h3, h4, h5, h6 {font-weight: 700; }
-
-h1{ font-size: $h1-size; }
-h2{ font-size: $h2-size; }
-h3{ font-size: $h3-size; }
-h4{ font-size: $h4-size; }
-h5{ font-size: $h5-size; }
-h6{ font-size: $h6-size; }
-
-p
-{
-    font-size: $font-size;
-    line-height: $line-height;
-}
-
-em { font-style: italic; }
-strong { font-weight: 700; }
-
-a:active,
-a:visited,
-a:link
-{
-    color: $link-color;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-a:hover
-{
-    color: $hover-color;
-}
-
+//WEBSITE CSS
+@import "html";
 @import "sidebar";
 @import "post";
-
 @import "misc";
-
 @import "category";
 @import "syntax";
-
-
