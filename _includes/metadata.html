@@ -48,7 +48,7 @@
     {% assign i = 1 %}
     {% for cat in page.categories %}
         <li>
-            <a href="/categories/{{cat}}">
+            <a target="_blank" href="/categories/{{cat}}">
                 {% assign cat_num = page.categories | size %}
                 {{ cat }}{% if i != cat_num %},{% endif %}
             </a>

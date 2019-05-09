@@ -14,3 +14,9 @@ sass:
 
 plugins:
   - jekyll-sitemap
+
+exclude:
+  - scripts
+  - /screenshot.png
+  - /README.md
+  - /LICENSE

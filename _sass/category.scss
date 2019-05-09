@@ -35,6 +35,7 @@
 {
     font-weight: 700;
     font-size: 2em;
+    padding-bottom: 5px;
 }
 
 .primary-category-wrapper >  ul.category-list
@@ -44,8 +45,8 @@
 
 .primary-category-wrapper > ul.category-list li
 {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 @media (max-width: 799px) 

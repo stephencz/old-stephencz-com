@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Reading List
-description: An on-going list of things I've read.
-categories: [books, collections, self]
-updated: 2019-04-5
+title: The Reading List
+description: An on-going collection of the books, essays, papers, and poems that I've read.
+categories: [collections, books, reading]
+updated: 2019-05-9
 status: continuous
 links: []
 custom: []
@@ -11,9 +11,14 @@ custom: []
 
 
 
-**Currently Reading:** *East of Eden* by John Steinbeck and *Batman: No Man's Land*.
+## Book Log
 
-## Prior to 2019
+### May 2019
+
+* *Atomic Habit* by James Clear
+* *Batman: No Man's Land Vol. 1*
+
+### Prior to May 2019
 
 Here is everything I remember reading prior to Apirl 2019. Titles will be added to this list as I remember them.
 
@@ -44,6 +49,7 @@ Here is everything I remember reading prior to Apirl 2019. Titles will be added 
 * *On Writing Well* by William Zinsser
 * *The Pearl* by John Steinbeck
 * *The Power of Habit* by Charles Duhigg
+* *The Raven* by Edgar All
 * *The Red Pony* by John Steinbeck
 * *The Red Rising Trilogy* by Pierce Brown (Red Rising, Golden Son, Morning Star)
 * *Self-Reliance* by Ralph Waldo Emerson

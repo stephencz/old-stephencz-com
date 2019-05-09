@@ -1,19 +1,15 @@
 ---
 layout: post
-title: Scripts
-description: In computing and programming tasks, often times you need a quick solution that gets a job done. This page keep track of the scripts I've written to do just that -- Get a job done.
-categories: [programming, collections]
-updated: 2019-04-5
-status: continuous
-links: [Github Repository, "https://github.com/stephencz/scripts"]
+title: static-site-swap.py
+description: A python script built to handle the transfer of this website with ftplib.
+categories: [scripts, programming, python]
+updated: 2019-05-9
+status: finished
+links: [source, "https://github.com/stephencz/scripts/blob/master/python/static-site-swap.py"]
 custom: []
 ---
 
-## Python
-
-
-### static-site-swap.py
-
+##  static-site-swap.py
 The major benefit of a server-side content management system such as WordPress is that content is managed and created on the web server.
 Static websites, such as this website, need to have their new content and changes manually uploaded to the server.
 While doing this isn't difficult, it does get annoying after a while.
@@ -70,4 +66,28 @@ def recursive_delete(session):
         print("Removed: " + file)
 ```
 
+A similar function, adapted to recursively upload a folder, is the recursive upload function:
+
+```python
+def recursive_upload(session, directory):
+    file_names = [name for name in listdir(directory) if name not in blacklist]
+
+    for file_name in file_names:
+        if(isfile(join(directory, file_name))):
+            file = open(join(directory, file_name), 'rb')
+            session.storbinary('STOR ' + file_name, file)
+
+        else:
+            pwd = session.pwd()
+
+            session.mkd(file_name)
+            session.cwd(file_name)
+
+            recursive_upload(session, join(directory, file_name))
+
+            session.cwd(pwd)
+
+
+        print("Uploaded: " + file_name)
+```
 
