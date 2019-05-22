@@ -1,27 +1,27 @@
 ---
 layout: post
-title: The Reading List
-description: An on-going collection of the books, essays, papers, and poems that I've read.
-categories: [collections, books, reading]
+title: A List of Things I've Read
+description: An actively expanding collection of things I've read.
+categories: [personal, collections, books, reading]
 updated: 2019-05-9
 status: continuous
 links: []
 custom: []
 ---
 
+{:toc}
 
 
-## Book Log
+## May 2019
 
-### May 2019
-
+### Books
 * *Atomic Habit* by James Clear
-* *Batman: No Man's Land Vol. 1*
+* *Batman: No Man's Land Vol. 1* by Someone
+* *Thinking, Fast and Slow* by Daniel Kahneman
 
-### Prior to May 2019
+## Before this Post
 
-Here is everything I remember reading prior to Apirl 2019. Titles will be added to this list as I remember them.
-
+### Books
 * *1984* by George Orwell
 * *A Confederacy of Dunces* by John Kennedy Toole
 * *A Mind for Numbers* by Barbara Oakley
@@ -60,3 +60,5 @@ Here is everything I remember reading prior to Apirl 2019. Titles will be added 
 * *The Way to Wealth* by Benjamin Franklin
 * *The Wisdom of Insecurity* by Alan Watts
 * *The World as I See It* by Albert Einstein
+
+### Poems

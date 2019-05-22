@@ -9,7 +9,6 @@ links: [source, "https://github.com/stephencz/scripts/blob/master/python/static-
 custom: []
 ---
 
-##  static-site-swap.py
 The major benefit of a server-side content management system such as WordPress is that content is managed and created on the web server.
 Static websites, such as this website, need to have their new content and changes manually uploaded to the server.
 While doing this isn't difficult, it does get annoying after a while.
