@@ -1,5 +1,5 @@
-# stephencz-com
-The source code for my personal website's current design. Made with the static-site generator Jekyll. 
+# old-stephencz-com
+The old source code for my personal website written in Jekyll.
 
 ## Screenshots
 ![Screenshot](screenshot.png?raw=true "Screenshot of website")
